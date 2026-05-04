@@ -1,0 +1,47 @@
+{
+  "restaurant": "My Restaurant",
+  "currency": "$",
+  "taxRate": 0,
+  "updatedAt": "2025-01-01T12:00:00.000Z",
+  "categories": [
+    {
+      "name": "Starters",
+      "sort": 1,
+      "tag": "",
+      "items": [
+        { "id": 1, "name": "Hummus & Pita", "price": 6.50, "tag": "", "image": "", "description": "Creamy house-made hummus with warm pita bread" },
+        { "id": 2, "name": "Fattoush Salad", "price": 7.00, "tag": "V", "image": "", "description": "Fresh vegetables, crispy bread, pomegranate dressing" },
+        { "id": 3, "name": "Kibbeh", "price": 8.50, "tag": "", "image": "", "description": "Crispy bulgur shells filled with spiced minced meat" }
+      ]
+    },
+    {
+      "name": "Mains",
+      "sort": 2,
+      "tag": "",
+      "items": [
+        { "id": 4, "name": "Grilled Chicken Taouk", "price": 14.00, "tag": "", "image": "", "description": "Marinated chicken skewers, garlic sauce, fries" },
+        { "id": 5, "name": "Mixed Grill Platter", "price": 22.00, "tag": "", "image": "", "description": "Kofta, chicken taouk, lamb chops — served with rice & salad" },
+        { "id": 6, "name": "Vegetarian Mezze", "price": 13.50, "tag": "V", "image": "", "description": "Hummus, moutabal, tabbouleh, falafel, pita" }
+      ]
+    },
+    {
+      "name": "Desserts",
+      "sort": 3,
+      "tag": "",
+      "items": [
+        { "id": 7, "name": "Baklava", "price": 5.00, "tag": "", "image": "", "description": "Layered phyllo pastry with pistachios and honey" },
+        { "id": 8, "name": "Knafeh", "price": 6.50, "tag": "", "image": "", "description": "Warm cheese pastry in orange blossom syrup" }
+      ]
+    },
+    {
+      "name": "Drinks",
+      "sort": 4,
+      "tag": "",
+      "items": [
+        { "id": 9,  "name": "Fresh Lemonade", "price": 3.50, "tag": "", "image": "", "description": "Pressed lemons, mint, a hint of orange blossom" },
+        { "id": 10, "name": "Jallab", "price": 4.00, "tag": "", "image": "", "description": "Grape, rose water & pine nuts — served over ice" },
+        { "id": 11, "name": "Arabic Coffee", "price": 2.50, "tag": "", "image": "", "description": "Cardamom-spiced light roast, served in a dallah" }
+      ]
+    }
+  ]
+}
