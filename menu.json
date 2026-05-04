@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-04T20:40:57.5976899+03:00",
+    "updatedAt":  "2026-05-04T21:06:46.6432337+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -461,12 +461,7 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "portions":  [
-                                                              {
-                                                                  "name":  "Bottle",
-                                                                  "price":  1.5
-                                                              }
-                                                          ]
+                                             "price":  1.5
                                          },
                                          {
                                              "id":  54,
@@ -474,12 +469,7 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "portions":  [
-                                                              {
-                                                                  "name":  "Bottle",
-                                                                  "price":  2
-                                                              }
-                                                          ]
+                                             "price":  2
                                          }
                                      ],
                            "sort":  60
