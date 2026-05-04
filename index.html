@@ -19,19 +19,10 @@
     --cream-dark: #f0ece3;
     --divider: rgba(201,168,76,0.25);
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); min-height: 100vh; }
 
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--cream);
-    color: var(--ink);
-    min-height: 100vh;
-  }
-
-  /* ── HEADER ── */
   header {
     background: var(--ink);
     color: var(--cream);
@@ -48,214 +39,133 @@
     pointer-events: none;
   }
   .header-ornament {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1.2rem;
+    display: flex; align-items: center; justify-content: center;
+    gap: 1rem; margin-bottom: 1.2rem;
   }
-  .header-ornament::before,
-  .header-ornament::after {
-    content: '';
-    height: 1px;
-    width: 60px;
-    background: linear-gradient(to right, transparent, var(--gold));
+  .header-ornament::before, .header-ornament::after {
+    content: ''; height: 1px; width: 60px;
   }
-  .header-ornament::after {
-    background: linear-gradient(to left, transparent, var(--gold));
-  }
-  .header-ornament span {
-    color: var(--gold);
-    font-size: 1.2rem;
-  }
+  .header-ornament::before { background: linear-gradient(to right, transparent, var(--gold)); }
+  .header-ornament::after  { background: linear-gradient(to left,  transparent, var(--gold)); }
+  .header-ornament span { color: var(--gold); font-size: 1.2rem; }
   header h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2.4rem, 6vw, 3.8rem);
-    font-weight: 300;
-    letter-spacing: 0.08em;
-    color: var(--cream);
-    margin-bottom: 0.5rem;
+    font-weight: 300; letter-spacing: 0.08em; color: var(--cream); margin-bottom: 0.5rem;
   }
-  header h1 em {
-    font-style: italic;
-    color: var(--gold-light);
-  }
+  header h1 em { font-style: italic; color: var(--gold-light); }
   .header-sub {
-    font-size: 0.78rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(250,248,244,0.45);
-    margin-top: 1.2rem;
+    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: rgba(250,248,244,0.45); margin-top: 1.2rem;
   }
 
-  /* ── NAV TABS ── */
   .nav-wrapper {
     background: var(--ink);
     border-bottom: 1px solid rgba(201,168,76,0.2);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    position: sticky; top: 0; z-index: 100;
   }
   nav {
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    gap: 0;
+    display: flex; overflow-x: auto; scrollbar-width: none;
+    max-width: 900px; margin: 0 auto; padding: 0 1rem; gap: 0;
   }
   nav::-webkit-scrollbar { display: none; }
   nav a {
-    color: rgba(250,248,244,0.5);
-    text-decoration: none;
-    font-size: 0.72rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    padding: 0.9rem 1.1rem;
-    white-space: nowrap;
+    color: rgba(250,248,244,0.5); text-decoration: none;
+    font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase;
+    padding: 0.9rem 1.1rem; white-space: nowrap;
     border-bottom: 2px solid transparent;
-    transition: color 0.2s, border-color 0.2s;
-    flex-shrink: 0;
+    transition: color 0.2s, border-color 0.2s; flex-shrink: 0;
   }
-  nav a:hover, nav a.active {
-    color: var(--gold-light);
-    border-bottom-color: var(--gold);
-  }
+  nav a:hover, nav a.active { color: var(--gold-light); border-bottom-color: var(--gold); }
 
-  /* ── MAIN CONTENT ── */
-  main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1.25rem 5rem;
-  }
+  main { max-width: 900px; margin: 0 auto; padding: 0 1.25rem 5rem; }
 
-  /* ── SECTION ── */
-  .menu-section {
-    padding-top: 3.5rem;
-  }
+  .menu-section { padding-top: 3.5rem; }
   .section-header {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
+    display: flex; align-items: center; gap: 1.5rem;
+    margin-bottom: 2rem; padding-bottom: 1rem;
     border-bottom: 1px solid var(--divider);
   }
   .section-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.8rem, 4vw, 2.4rem);
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    color: var(--ink);
-    white-space: nowrap;
+    font-weight: 400; letter-spacing: 0.03em; color: var(--ink); white-space: nowrap;
   }
-  .section-line {
-    flex: 1;
-    height: 1px;
-    background: var(--divider);
-  }
+  .section-line { flex: 1; height: 1px; background: var(--divider); }
   .section-num {
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    color: var(--gold-dark);
-    font-weight: 500;
-    white-space: nowrap;
+    font-size: 0.7rem; letter-spacing: 0.2em;
+    color: var(--gold-dark); font-weight: 500; white-space: nowrap;
   }
 
-  /* ── ITEM GRID ── */
   .items-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1px;
-    background: var(--divider);
+    gap: 1px; background: var(--divider);
     border: 1px solid var(--divider);
   }
   .item-card {
-    background: var(--cream);
-    padding: 1.4rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+    background: var(--cream); padding: 1.4rem 1.5rem;
+    display: flex; flex-direction: column; gap: 0.4rem;
     transition: background 0.18s;
   }
-  .item-card:hover {
-    background: var(--cream-dark);
-  }
+  .item-card:hover { background: var(--cream-dark); }
+
   .item-top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
+    display: flex; align-items: flex-start;
+    justify-content: space-between; gap: 1rem;
   }
   .item-name {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.15rem;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    line-height: 1.3;
-    color: var(--ink);
-    flex: 1;
+    font-size: 1.15rem; font-weight: 600; letter-spacing: 0.01em;
+    line-height: 1.3; color: var(--ink); flex: 1;
   }
   .item-price {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--gold-dark);
-    white-space: nowrap;
-    letter-spacing: 0.02em;
-    flex-shrink: 0;
+    font-size: 0.95rem; font-weight: 500; color: var(--gold-dark);
+    white-space: nowrap; letter-spacing: 0.02em; flex-shrink: 0;
   }
   .item-desc {
-    font-size: 0.82rem;
-    color: var(--ink-light);
-    line-height: 1.55;
-    font-weight: 300;
+    font-size: 0.82rem; color: var(--ink-light);
+    line-height: 1.55; font-weight: 300;
   }
   .item-tag {
-    display: inline-block;
-    font-size: 0.62rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #4a7c4e;
-    border: 1px solid #4a7c4e;
-    padding: 1px 6px;
-    border-radius: 2px;
-    margin-top: 0.2rem;
-    width: fit-content;
+    display: inline-block; font-size: 0.62rem; letter-spacing: 0.15em;
+    text-transform: uppercase; color: #4a7c4e; border: 1px solid #4a7c4e;
+    padding: 1px 6px; border-radius: 2px; margin-top: 0.2rem; width: fit-content;
   }
 
-  /* ── FOOTER ── */
-  footer {
-    text-align: center;
-    padding: 2rem 1rem 3rem;
+  /* Portions sub-listing */
+  .portions-list {
+    margin-top: 0.55rem;
     border-top: 1px solid var(--divider);
-    margin-top: 3rem;
+    padding-top: 0.55rem;
+    display: flex; flex-direction: column; gap: 0.3rem;
+  }
+  .portion-row {
+    display: flex; justify-content: space-between; align-items: center; gap: 0.5rem;
+  }
+  .portion-name {
+    font-size: 0.8rem; color: var(--ink-light); font-weight: 400; letter-spacing: 0.02em;
+  }
+  .portion-price {
+    font-size: 0.8rem; color: var(--gold-dark); font-weight: 500;
+    white-space: nowrap; flex-shrink: 0;
+  }
+
+  footer {
+    text-align: center; padding: 2rem 1rem 3rem;
+    border-top: 1px solid var(--divider); margin-top: 3rem;
   }
   .footer-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 0.15em;
-    color: var(--ink-light);
-    margin-bottom: 0.5rem;
+    font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;
+    font-weight: 300; letter-spacing: 0.15em; color: var(--ink-light); margin-bottom: 0.5rem;
   }
-  .footer-update {
-    font-size: 0.72rem;
-    color: rgba(107,96,88,0.55);
-    letter-spacing: 0.08em;
-  }
+  .footer-update { font-size: 0.72rem; color: rgba(107,96,88,0.55); letter-spacing: 0.08em; }
 
-  /* ── LOADING / ERROR ── */
   .state-msg {
-    text-align: center;
-    padding: 4rem 2rem;
-    color: var(--ink-light);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-style: italic;
+    text-align: center; padding: 4rem 2rem; color: var(--ink-light);
+    font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-style: italic;
   }
 
-  /* ── MOBILE ── */
   @media (max-width: 520px) {
     .items-grid { grid-template-columns: 1fr; }
     .section-num { display: none; }
@@ -267,7 +177,7 @@
 <header>
   <div class="header-ornament"><span>✦</span></div>
   <h1 id="restaurant-name">Our <em>Menu</em></h1>
-  <p class="header-sub" id="header-tagline">Please ask your server about allergens &amp; daily specials</p>
+  <p class="header-sub">Please ask your server about allergens &amp; daily specials</p>
 </header>
 
 <div class="nav-wrapper">
@@ -286,7 +196,6 @@
 <script>
 (async () => {
   const MENU_URL = 'menu.json';
-
   let data;
   try {
     const res = await fetch(MENU_URL + '?v=' + Date.now());
@@ -297,7 +206,6 @@
     return;
   }
 
-  // Update header
   const title = data.restaurant || 'Our Menu';
   document.title = title;
   document.getElementById('restaurant-name').innerHTML = formatTitle(title);
@@ -310,34 +218,30 @@
   }
 
   const currency = data.currency || '$';
-  const nav      = document.getElementById('category-nav');
-  const main     = document.getElementById('menu-main');
-  main.innerHTML  = '';
+  const nav  = document.getElementById('category-nav');
+  const main = document.getElementById('menu-main');
+  main.innerHTML = '';
 
-  const cats = data.categories || [];
-
-  cats.forEach((cat, idx) => {
-    // Nav link
+  (data.categories || []).forEach((cat, idx) => {
     const catId = 'cat-' + idx;
+
     const a = document.createElement('a');
     a.href = '#' + catId;
     a.textContent = cat.name;
     if (idx === 0) a.classList.add('active');
     nav.appendChild(a);
 
-    // Section
     const section = document.createElement('section');
     section.className = 'menu-section';
     section.id = catId;
 
-    const hdr = document.createElement('div');
-    hdr.className = 'section-header';
-    hdr.innerHTML = `
-      <h2 class="section-title">${esc(cat.name)}</h2>
-      <div class="section-line"></div>
-      <span class="section-num">${String(idx + 1).padStart(2, '0')}</span>
+    section.innerHTML = `
+      <div class="section-header">
+        <h2 class="section-title">${esc(cat.name)}</h2>
+        <div class="section-line"></div>
+        <span class="section-num">${String(idx + 1).padStart(2, '0')}</span>
+      </div>
     `;
-    section.appendChild(hdr);
 
     const grid = document.createElement('div');
     grid.className = 'items-grid';
@@ -346,24 +250,40 @@
       const card = document.createElement('div');
       card.className = 'item-card';
 
-      const priceStr = item.price > 0
-        ? currency + Number(item.price).toFixed(2)
-        : 'Ask server';
+      const hasPortions = item.portions && item.portions.length > 0;
 
-      const tagHtml = item.tag
-        ? `<span class="item-tag">${esc(item.tag)}</span>`
+      // Top row: name + price (price only if no portions)
+      const priceHtml = !hasPortions
+        ? `<span class="item-price">${item.price > 0 ? currency + Number(item.price).toFixed(2) : 'Ask server'}</span>`
         : '';
 
       const descHtml = item.description
         ? `<p class="item-desc">${esc(item.description)}</p>`
         : '';
 
+      const tagHtml = item.tag
+        ? `<span class="item-tag">${esc(item.tag)}</span>`
+        : '';
+
+      // Portions sub-listing
+      let portionsHtml = '';
+      if (hasPortions) {
+        const rows = item.portions.map(p => `
+          <div class="portion-row">
+            <span class="portion-name">${esc(p.name)}</span>
+            <span class="portion-price">${p.price > 0 ? currency + Number(p.price).toFixed(2) : 'Ask server'}</span>
+          </div>
+        `).join('');
+        portionsHtml = `<div class="portions-list">${rows}</div>`;
+      }
+
       card.innerHTML = `
         <div class="item-top">
           <span class="item-name">${esc(item.name)}</span>
-          <span class="item-price">${priceStr}</span>
+          ${priceHtml}
         </div>
         ${descHtml}
+        ${portionsHtml}
         ${tagHtml}
       `;
       grid.appendChild(card);
@@ -373,7 +293,7 @@
     main.appendChild(section);
   });
 
-  // Active nav highlight on scroll
+  // Active nav on scroll
   const sections = main.querySelectorAll('.menu-section');
   const navLinks  = nav.querySelectorAll('a');
   const observer  = new IntersectionObserver(entries => {
@@ -393,8 +313,8 @@
 
 function esc(str) {
   return String(str || '')
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 function formatTitle(name) {

@@ -1,40 +1,18 @@
 # ============================================================
 #  Export-SambaMenu.ps1
-#  Exports SambaPOS V5 menu (categories + items + prices)
+#  Exports SambaPOS V5 menu (categories + items + portions/prices)
 #  to menu.json for the GitHub Pages online menu.
-#
-#  HOW TO USE:
-#    1. Edit the $config section below to match your setup
-#    2. Run once manually to test: Right-click > Run with PowerShell
-#    3. Optionally schedule via Task Scheduler to auto-update
-#
-#  OUTPUT: menu.json in the same folder as this script
 # ============================================================
 
 # ── CONFIG ──────────────────────────────────────────────────
 $config = @{
-    # SQL Server instance name (check in SSMS if unsure)
-    SqlInstance   = "localhost\SQLEXPRESS"
-
-    # SambaPOS database name (usually SambaPOS5)
-    Database      = "SambaPOS5"
-
-    # Where to write the output JSON
-    # Change this to your local GitHub repo path:
-    # e.g. "C:\Users\YourName\my-menu-repo\docs\menu.json"
-    OutputPath    = "$PSScriptRoot\..\docs\menu.json"
-
-    # Your restaurant name (shown on the menu page)
-    RestaurantName = "My Restaurant"
-
-    # Currency symbol
-    Currency      = "$"
-
-    # Tax rate percentage (0 if prices are already tax-inclusive)
-    TaxRate       = 0
-
-    # Menu name to export from SambaPOS (leave empty for ALL menus)
-    MenuName      = ""
+    SqlInstance    = "localhost"
+    Database       = "SambaPOS"
+    OutputPath     = "C:\Users\SambaPOS Server\Documents\files\menu.json"
+    RestaurantName = "DJ LAB Cafe"
+    Currency       = "$"
+    TaxRate        = 0
+    MenuName       = ""
 }
 # ── END CONFIG ───────────────────────────────────────────────
 
@@ -45,32 +23,28 @@ function Write-Log($msg) {
 
 Write-Log "Starting SambaPOS menu export..."
 
-# Build connection string (Windows Auth — same account running SambaPOS)
 $connStr = "Server=$($config.SqlInstance);Database=$($config.Database);Integrated Security=True;TrustServerCertificate=True;"
 
-# SQL query — pulls menu categories and items with prices
-# Adjust column/table names if your SambaPOS schema differs
 $sql = @"
 SELECT
-    mg.Name           AS CategoryName,
-    mg.SortOrder      AS CategorySort,
-    mg.Tag            AS CategoryTag,
-    mi.Name           AS ItemName,
-    mi.Id             AS ItemId,
-    mi.Tag            AS ItemTag,
-    ISNULL(mp.Price, 0) AS Price,
-    ISNULL(mi.Barcode, '') AS Barcode
+    cat.Name             AS CategoryName,
+    cat.SortOrder        AS CategorySort,
+    mi.Name              AS ItemName,
+    mi.Id                AS ItemId,
+    mi.Description       AS ItemDescription,
+    mi.Tag               AS ItemTag,
+    mp.Name              AS PortionName,
+    ISNULL(mip.Price, 0) AS Price
 FROM
-    MenuItemGroups mg
-    INNER JOIN MenuItems mi ON mi.MenuItemGroupId = mg.Id
-    LEFT JOIN MenuItemPortions mp ON mp.MenuItemId = mi.Id
+    ScreenMenuCategories cat
+    INNER JOIN ScreenMenuItems smi ON smi.ScreenMenuCategoryId = cat.Id
+    INNER JOIN MenuItems mi        ON mi.Id = smi.MenuItemId
+    LEFT  JOIN MenuItemPortions mp ON mp.MenuItemId = mi.Id
+    LEFT  JOIN MenuItemPrices mip  ON mip.MenuItemPortionId = mp.Id
 WHERE
-    (@MenuName = '' OR mg.Name IN (
-        SELECT mg2.Name FROM MenuItemGroups mg2
-        WHERE mg2.Name = @MenuName
-    ))
+    (@MenuName = '' OR cat.Name = @MenuName)
 ORDER BY
-    mg.SortOrder, mg.Name, mi.Name
+    cat.SortOrder, cat.Name, smi.SortOrder, mp.Id
 "@
 
 try {
@@ -88,35 +62,62 @@ try {
 
     Write-Log "Query returned $($table.Rows.Count) rows."
 
-    # Group rows into categories > items structure
     $categories = [ordered]@{}
+    $itemMap     = [ordered]@{}
 
     foreach ($row in $table.Rows) {
-        $cat  = $row.CategoryName
-        $item = @{
-            id       = [int]$row.ItemId
-            name     = $row.ItemName
-            price    = [math]::Round([double]$row.Price, 2)
-            tag      = $row.ItemTag
-            barcode  = $row.Barcode
-            # Placeholder image — replace with real URL once you have photos
-            image    = ""
-            description = ""
-        }
+        $cat      = $row.CategoryName
+        $itemKey  = "$cat|$($row.ItemId)"
+        $portion  = $row.PortionName
+        $price    = [math]::Round([double]$row.Price, 2)
+        $isNormal = ($portion -eq "Normal")
 
         if (-not $categories.Contains($cat)) {
             $categories[$cat] = @{
                 name  = $cat
                 sort  = [int]$row.CategorySort
-                tag   = $row.CategoryTag
-                items = @()
+                items = [System.Collections.ArrayList]@()
             }
         }
-        $categories[$cat].items += $item
+
+        if (-not $itemMap.Contains($itemKey)) {
+            $newItem = [ordered]@{
+                id          = [int]$row.ItemId
+                name        = $row.ItemName
+                tag         = $row.ItemTag
+                image       = ""
+                description = $row.ItemDescription
+                price       = $null
+                portions    = [System.Collections.ArrayList]@()
+            }
+            $itemMap[$itemKey] = $newItem
+            $categories[$cat].items.Add($newItem) | Out-Null
+        }
+
+        $item = $itemMap[$itemKey]
+
+        if ($isNormal) {
+            $item.price = $price
+        } else {
+            $item.portions.Add([ordered]@{
+                name  = $portion
+                price = $price
+            }) | Out-Null
+        }
     }
 
-    # Build final JSON payload
-    $menu = @{
+    # Finalise: if item has named portions, remove price; if no portions, remove portions array
+    foreach ($cat in $categories.Values) {
+        foreach ($item in $cat.items) {
+            if ($item.portions.Count -gt 0) {
+                $item.Remove("price")
+            } else {
+                $item.Remove("portions")
+            }
+        }
+    }
+
+    $menu = [ordered]@{
         restaurant  = $config.RestaurantName
         currency    = $config.Currency
         taxRate     = $config.TaxRate
@@ -126,13 +127,12 @@ try {
 
     $json = $menu | ConvertTo-Json -Depth 10 -Compress:$false
 
-    # Ensure output directory exists
     $outDir = Split-Path $config.OutputPath -Parent
     if (-not (Test-Path $outDir)) { New-Item -ItemType Directory -Path $outDir -Force | Out-Null }
 
     $json | Out-File -FilePath $config.OutputPath -Encoding UTF8 -Force
     Write-Log "Menu exported to: $($config.OutputPath)"
-    Write-Log "Categories: $($categories.Count)  |  Items: $($table.Rows.Count)"
+    Write-Log "Categories: $($categories.Count)  |  Items: $($itemMap.Count)"
 
 } catch {
     Write-Log "ERROR: $_"

@@ -1,7 +1,8 @@
 ﻿{
-    "taxRate":  0,
-    "currency":  "$",
     "restaurant":  "DJ LAB Cafe",
+    "currency":  "$",
+    "taxRate":  0,
+    "updatedAt":  "2026-05-04T18:06:53.4955639+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -9,50 +10,50 @@
                                          {
                                              "id":  37,
                                              "name":  "Illy Espresso Single",
-                                             "description":  "",
-                                             "price":  3,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  3
                                          },
                                          {
                                              "id":  38,
                                              "name":  "Illy Espresso Double",
-                                             "description":  "",
-                                             "price":  4,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  4
                                          },
                                          {
                                              "id":  41,
                                              "name":  "Illy Lungo",
-                                             "description":  "",
-                                             "price":  4,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  4
                                          },
                                          {
                                              "id":  39,
                                              "name":  "Illy Americano",
-                                             "description":  "",
-                                             "price":  4.5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  4.5
                                          },
                                          {
                                              "id":  40,
                                              "name":  "French Press",
-                                             "description":  "",
-                                             "price":  5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          },
                                          {
                                              "id":  60,
                                              "name":  "Lebanese Coffee",
-                                             "description":  "",
-                                             "price":  2.5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  2.5
                                          }
                                      ],
                            "sort":  10
@@ -63,82 +64,82 @@
                                          {
                                              "id":  1,
                                              "name":  "White Mocha",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  2,
                                              "name":  "Salted Caramel",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  3,
                                              "name":  "Caramel Macchiato",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  4,
                                              "name":  "Cappuccino",
-                                             "description":  "",
-                                             "price":  5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          },
                                          {
                                              "id":  5,
                                              "name":  "Hot Chocolate",
-                                             "description":  "",
-                                             "price":  5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          },
                                          {
                                              "id":  6,
                                              "name":  "Flat White",
-                                             "description":  "",
-                                             "price":  5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          },
                                          {
                                              "id":  7,
                                              "name":  "Matcha Latte",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  42,
                                              "name":  "Latte",
-                                             "description":  "",
-                                             "price":  5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          },
                                          {
                                              "id":  43,
                                              "name":  "Spanish Latte",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  44,
                                              "name":  "Mocha",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          }
                                      ],
                            "sort":  20
@@ -149,98 +150,98 @@
                                          {
                                              "id":  28,
                                              "name":  "Iced Americano",
-                                             "description":  "",
-                                             "price":  4.5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  4.5
                                          },
                                          {
                                              "id":  17,
                                              "name":  "Cold Brew",
-                                             "description":  "",
-                                             "price":  5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          },
                                          {
                                              "id":  21,
                                              "name":  "Tokyo Iced",
-                                             "description":  "",
-                                             "price":  4,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  4
                                          },
                                          {
                                              "id":  23,
                                              "name":  "Iced Latte",
-                                             "description":  "",
-                                             "price":  5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          },
                                          {
                                              "id":  24,
                                              "name":  "Iced Salted Caramel",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  22,
                                              "name":  "Iced Spanish Latte",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  25,
                                              "name":  "Iced Mocha",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  26,
                                              "name":  "Iced White Mocha",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  27,
                                              "name":  "Iced Caramel Macchiato",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  20,
                                              "name":  "Iced Chocolate",
-                                             "description":  "",
-                                             "price":  5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          },
                                          {
                                              "id":  19,
                                              "name":  "Iced Matcha",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  18,
                                              "name":  "Ice Tea",
-                                             "description":  "",
-                                             "price":  5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          }
                                      ],
                            "sort":  30
@@ -251,26 +252,26 @@
                                          {
                                              "id":  61,
                                              "name":  "Milk",
-                                             "description":  "",
-                                             "price":  0,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  0
                                          },
                                          {
                                              "id":  62,
                                              "name":  "Syrup",
-                                             "description":  "",
-                                             "price":  0,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  0
                                          },
                                          {
                                              "id":  63,
                                              "name":  "Illy Espresso Shot",
-                                             "description":  "",
-                                             "price":  0,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  0
                                          }
                                      ],
                            "sort":  40
@@ -281,66 +282,70 @@
                                          {
                                              "id":  55,
                                              "name":  "Black Tea",
-                                             "description":  "",
-                                             "price":  4,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  55,
-                                             "name":  "Black Tea",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  6,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  56,
-                                             "name":  "Green Tea",
-                                             "description":  "",
-                                             "price":  4,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Cup",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Pot",
+                                                                  "price":  6
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  56,
                                              "name":  "Green Tea",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Cup",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Pot",
+                                                                  "price":  6
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  57,
                                              "name":  "Herbal Tea",
-                                             "description":  "",
-                                             "price":  4,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  57,
-                                             "name":  "Herbal Tea",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  6,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  58,
-                                             "name":  "Chamomile Tea",
-                                             "description":  "",
-                                             "price":  4,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Cup",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Pot",
+                                                                  "price":  6
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  58,
                                              "name":  "Chamomile Tea",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Cup",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Pot",
+                                                                  "price":  6
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  50
@@ -351,18 +356,28 @@
                                          {
                                              "id":  53,
                                              "name":  "Still Water 330ML",
-                                             "description":  "",
-                                             "price":  1.5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  1.5
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  54,
                                              "name":  "Sparkling Water 330ML",
-                                             "description":  "",
-                                             "price":  2,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  2
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  60
@@ -373,34 +388,27 @@
                                          {
                                              "id":  64,
                                              "name":  "Sofi de France",
-                                             "description":  "",
-                                             "price":  3.5,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  64,
-                                             "name":  "Sofi de France",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  4.5,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  64,
-                                             "name":  "Sofi de France",
-                                             "description":  "",
-                                             "price":  4.5,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  64,
-                                             "name":  "Sofi de France",
-                                             "description":  "",
-                                             "price":  5,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Plain Croissant",
+                                                                  "price":  3.5
+                                                              },
+                                                              {
+                                                                  "name":  "Cheese Croissant",
+                                                                  "price":  4.5
+                                                              },
+                                                              {
+                                                                  "name":  "Thyme Croissant",
+                                                                  "price":  4.5
+                                                              },
+                                                              {
+                                                                  "name":  "Pain Choco",
+                                                                  "price":  5
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  70
@@ -411,154 +419,144 @@
                                          {
                                              "id":  30,
                                              "name":  "Classic Browny",
-                                             "description":  "",
-                                             "price":  5.5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5.5
                                          },
                                          {
                                              "id":  29,
                                              "name":  "Cinnamon Roll",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  67,
                                              "name":  "Cake du Jour",
-                                             "description":  "",
-                                             "price":  4,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  67,
-                                             "name":  "Cake du Jour",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  4,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  67,
-                                             "name":  "Cake du Jour",
-                                             "description":  "",
-                                             "price":  5,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  67,
-                                             "name":  "Cake du Jour",
-                                             "description":  "",
-                                             "price":  5,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Banana",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Orange",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Lemon",
+                                                                  "price":  5
+                                                              },
+                                                              {
+                                                                  "name":  "Dark Chocolate",
+                                                                  "price":  5
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  33,
                                              "name":  "Homemade Cookie",
-                                             "description":  "",
-                                             "price":  3,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  3
                                          },
                                          {
                                              "id":  32,
                                              "name":  "Muffin",
-                                             "description":  "",
-                                             "price":  4,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  32,
-                                             "name":  "Muffin",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  4,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  32,
-                                             "name":  "Muffin",
-                                             "description":  "",
-                                             "price":  4,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Vanilla",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Chocolate",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Marbled",
+                                                                  "price":  4
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  9,
                                              "name":  "Energy Bar",
-                                             "description":  "",
-                                             "price":  4,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  4
                                          },
                                          {
                                              "id":  8,
                                              "name":  "Dates Assortment (3 Pcs)",
-                                             "description":  "",
-                                             "price":  2.5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  2.5
                                          },
                                          {
                                              "id":  35,
                                              "name":  "Sfouf",
-                                             "description":  "",
-                                             "price":  3.5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  3.5
                                          },
                                          {
                                              "id":  10,
                                              "name":  "Sweet Dates Fudge",
-                                             "description":  "",
-                                             "price":  6,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          },
                                          {
                                              "id":  68,
                                              "name":  "Peanut Butter Ball",
-                                             "description":  "",
-                                             "price":  2,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  2
                                          },
                                          {
                                              "id":  69,
                                              "name":  "Molass Lazy Cake",
-                                             "description":  "",
-                                             "price":  3,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  3
                                          },
                                          {
                                              "id":  70,
                                              "name":  "Espresso Bliss Bite",
-                                             "description":  "",
-                                             "price":  2,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  2
                                          },
                                          {
                                              "id":  72,
                                              "name":  "Dark Chocolate Roll",
-                                             "description":  "",
-                                             "price":  8,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  8
                                          },
                                          {
                                              "id":  71,
                                              "name":  "Dark Chocolate Babka",
-                                             "description":  "",
-                                             "price":  5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          }
                                      ],
                            "sort":  80
@@ -569,34 +567,34 @@
                                          {
                                              "id":  11,
                                              "name":  "Elmir Pilsner",
-                                             "description":  "",
-                                             "price":  8,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  8
                                          },
                                          {
                                              "id":  12,
                                              "name":  "Elmir India Pale Ale",
-                                             "description":  "",
-                                             "price":  8,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  8
                                          },
                                          {
                                              "id":  13,
                                              "name":  "Elmir Amber Ale",
-                                             "description":  "",
-                                             "price":  8,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  8
                                          },
                                          {
                                              "id":  14,
                                              "name":  "Elmir Anfé",
-                                             "description":  "",
-                                             "price":  9,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  9
                                          }
                                      ],
                            "sort":  90
@@ -607,130 +605,120 @@
                                          {
                                              "id":  15,
                                              "name":  "Mersel LebNat Gold",
-                                             "description":  "",
-                                             "price":  38,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  15,
-                                             "name":  "Mersel LebNat Gold",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  23,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  46,
-                                             "name":  "Mersel Red Velvet",
-                                             "description":  "",
-                                             "price":  8,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  38
+                                                              },
+                                                              {
+                                                                  "name":  "Retail",
+                                                                  "price":  23
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  46,
                                              "name":  "Mersel Red Velvet",
-                                             "description":  "",
-                                             "price":  35,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  46,
-                                             "name":  "Mersel Red Velvet",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  19,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Glass",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  35
+                                                              },
+                                                              {
+                                                                  "name":  "Retail",
+                                                                  "price":  19
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  48,
                                              "name":  "Mersel Elevate Red",
-                                             "description":  "",
-                                             "price":  45,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  48,
-                                             "name":  "Mersel Elevate Red",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  28,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  47,
-                                             "name":  "Mersel Jaffa Crush",
-                                             "description":  "",
-                                             "price":  8,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  45
+                                                              },
+                                                              {
+                                                                  "name":  "Retail",
+                                                                  "price":  28
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  47,
                                              "name":  "Mersel Jaffa Crush",
-                                             "description":  "",
-                                             "price":  35,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  47,
-                                             "name":  "Mersel Jaffa Crush",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  20,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  51,
-                                             "name":  "Heya Nour (White)",
-                                             "description":  "",
-                                             "price":  8,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Glass",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  35
+                                                              },
+                                                              {
+                                                                  "name":  "Retail",
+                                                                  "price":  20
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  51,
                                              "name":  "Heya Nour (White)",
-                                             "description":  "",
-                                             "price":  35,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  51,
-                                             "name":  "Heya Nour (White)",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  21,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  50,
-                                             "name":  "Heya Ward (Rosé)",
-                                             "description":  "",
-                                             "price":  8,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Glass",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  35
+                                                              },
+                                                              {
+                                                                  "name":  "Retail",
+                                                                  "price":  21
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  50,
                                              "name":  "Heya Ward (Rosé)",
-                                             "description":  "",
-                                             "price":  35,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  50,
-                                             "name":  "Heya Ward (Rosé)",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  21,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Glass",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  35
+                                                              },
+                                                              {
+                                                                  "name":  "Retail",
+                                                                  "price":  21
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  100
@@ -741,70 +729,54 @@
                                          {
                                              "id":  65,
                                              "name":  "Rifai Peanuts",
-                                             "description":  "",
-                                             "price":  1.5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  1.5
                                          },
                                          {
                                              "id":  66,
                                              "name":  "Rifai Krikri",
-                                             "description":  "",
-                                             "price":  1.5,
                                              "tag":  null,
-                                             "image":  ""
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  1.5
                                          },
                                          {
                                              "id":  73,
                                              "name":  "Oreshki Biscuits",
-                                             "description":  "",
-                                             "price":  4.5,
                                              "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  73,
-                                             "name":  "Oreshki Biscuits",
+                                             "image":  "",
                                              "description":  "",
-                                             "price":  4.5,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  73,
-                                             "name":  "Oreshki Biscuits",
-                                             "description":  "",
-                                             "price":  4.5,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  73,
-                                             "name":  "Oreshki Biscuits",
-                                             "description":  "",
-                                             "price":  4.5,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  73,
-                                             "name":  "Oreshki Biscuits",
-                                             "description":  "",
-                                             "price":  4.5,
-                                             "tag":  null,
-                                             "image":  ""
-                                         },
-                                         {
-                                             "id":  73,
-                                             "name":  "Oreshki Biscuits",
-                                             "description":  "",
-                                             "price":  4.5,
-                                             "tag":  null,
-                                             "image":  ""
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Dulce De Leche",
+                                                                  "price":  4.5
+                                                              },
+                                                              {
+                                                                  "name":  "Pistachio",
+                                                                  "price":  4.5
+                                                              },
+                                                              {
+                                                                  "name":  "Oreo",
+                                                                  "price":  4.5
+                                                              },
+                                                              {
+                                                                  "name":  "Lotus",
+                                                                  "price":  4.5
+                                                              },
+                                                              {
+                                                                  "name":  "Peanut Butter",
+                                                                  "price":  4.5
+                                                              },
+                                                              {
+                                                                  "name":  "Nutella",
+                                                                  "price":  4.5
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  110
                        }
-                   ],
-    "updatedAt":  "2026-05-04T17:47:26.6081042+03:00"
+                   ]
 }
