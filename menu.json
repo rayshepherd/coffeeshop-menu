@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-04T18:06:53.4955639+03:00",
+    "updatedAt":  "2026-05-04T20:40:57.5976899+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -62,8 +62,48 @@
                            "name":  "Latte-Based",
                            "items":  [
                                          {
+                                             "id":  42,
+                                             "name":  "Latte",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
+                                         },
+                                         {
+                                             "id":  4,
+                                             "name":  "Cappuccino",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
+                                         },
+                                         {
+                                             "id":  44,
+                                             "name":  "Mocha",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
+                                         },
+                                         {
                                              "id":  1,
                                              "name":  "White Mocha",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
+                                         },
+                                         {
+                                             "id":  6,
+                                             "name":  "Flat White",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
+                                         },
+                                         {
+                                             "id":  43,
+                                             "name":  "Spanish Latte",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
@@ -86,30 +126,6 @@
                                              "price":  6
                                          },
                                          {
-                                             "id":  4,
-                                             "name":  "Cappuccino",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  5
-                                         },
-                                         {
-                                             "id":  5,
-                                             "name":  "Hot Chocolate",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  5
-                                         },
-                                         {
-                                             "id":  6,
-                                             "name":  "Flat White",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  5
-                                         },
-                                         {
                                              "id":  7,
                                              "name":  "Matcha Latte",
                                              "tag":  null,
@@ -118,28 +134,12 @@
                                              "price":  6
                                          },
                                          {
-                                             "id":  42,
-                                             "name":  "Latte",
+                                             "id":  5,
+                                             "name":  "Hot Chocolate",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
                                              "price":  5
-                                         },
-                                         {
-                                             "id":  43,
-                                             "name":  "Spanish Latte",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
-                                             "id":  44,
-                                             "name":  "Mocha",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
                                          }
                                      ],
                            "sort":  20
@@ -148,20 +148,20 @@
                            "name":  "Cold Beverages",
                            "items":  [
                                          {
-                                             "id":  28,
-                                             "name":  "Iced Americano",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  4.5
-                                         },
-                                         {
                                              "id":  17,
                                              "name":  "Cold Brew",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
                                              "price":  5
+                                         },
+                                         {
+                                             "id":  28,
+                                             "name":  "Iced Americano",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  4.5
                                          },
                                          {
                                              "id":  21,
@@ -180,22 +180,6 @@
                                              "price":  5
                                          },
                                          {
-                                             "id":  24,
-                                             "name":  "Iced Salted Caramel",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
-                                             "id":  22,
-                                             "name":  "Iced Spanish Latte",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
                                              "id":  25,
                                              "name":  "Iced Mocha",
                                              "tag":  null,
@@ -212,8 +196,32 @@
                                              "price":  6
                                          },
                                          {
+                                             "id":  22,
+                                             "name":  "Iced Spanish Latte",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
+                                         },
+                                         {
+                                             "id":  24,
+                                             "name":  "Iced Salted Caramel",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
+                                         },
+                                         {
                                              "id":  27,
                                              "name":  "Iced Caramel Macchiato",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
+                                         },
+                                         {
+                                             "id":  19,
+                                             "name":  "Iced Matcha",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
@@ -228,14 +236,6 @@
                                              "price":  5
                                          },
                                          {
-                                             "id":  19,
-                                             "name":  "Iced Matcha",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
                                              "id":  18,
                                              "name":  "Ice Tea",
                                              "tag":  null,
@@ -245,36 +245,6 @@
                                          }
                                      ],
                            "sort":  30
-                       },
-                       {
-                           "name":  "Add-Ons",
-                           "items":  [
-                                         {
-                                             "id":  61,
-                                             "name":  "Milk",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  0
-                                         },
-                                         {
-                                             "id":  62,
-                                             "name":  "Syrup",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  0
-                                         },
-                                         {
-                                             "id":  63,
-                                             "name":  "Illy Espresso Shot",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  0
-                                         }
-                                     ],
-                           "sort":  40
                        },
                        {
                            "name":  "Tea",
@@ -348,82 +318,11 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  50
-                       },
-                       {
-                           "name":  "Soft Drinks",
-                           "items":  [
-                                         {
-                                             "id":  53,
-                                             "name":  "Still Water 330ML",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "portions":  [
-                                                              {
-                                                                  "name":  "Bottle",
-                                                                  "price":  1.5
-                                                              }
-                                                          ]
-                                         },
-                                         {
-                                             "id":  54,
-                                             "name":  "Sparkling Water 330ML",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "portions":  [
-                                                              {
-                                                                  "name":  "Bottle",
-                                                                  "price":  2
-                                                              }
-                                                          ]
-                                         }
-                                     ],
-                           "sort":  60
-                       },
-                       {
-                           "name":  "Breakfast",
-                           "items":  [
-                                         {
-                                             "id":  64,
-                                             "name":  "Sofi de France",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "portions":  [
-                                                              {
-                                                                  "name":  "Plain Croissant",
-                                                                  "price":  3.5
-                                                              },
-                                                              {
-                                                                  "name":  "Cheese Croissant",
-                                                                  "price":  4.5
-                                                              },
-                                                              {
-                                                                  "name":  "Thyme Croissant",
-                                                                  "price":  4.5
-                                                              },
-                                                              {
-                                                                  "name":  "Pain Choco",
-                                                                  "price":  5
-                                                              }
-                                                          ]
-                                         }
-                                     ],
-                           "sort":  70
+                           "sort":  40
                        },
                        {
                            "name":  "Desserts",
                            "items":  [
-                                         {
-                                             "id":  30,
-                                             "name":  "Classic Browny",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  5.5
-                                         },
                                          {
                                              "id":  29,
                                              "name":  "Cinnamon Roll",
@@ -431,6 +330,30 @@
                                              "image":  "",
                                              "description":  "",
                                              "price":  6
+                                         },
+                                         {
+                                             "id":  72,
+                                             "name":  "Dark Chocolate Roll",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  8
+                                         },
+                                         {
+                                             "id":  71,
+                                             "name":  "Dark Chocolate Babka",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
+                                         },
+                                         {
+                                             "id":  69,
+                                             "name":  "Molass Lazy Cake",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  3
                                          },
                                          {
                                              "id":  67,
@@ -487,36 +410,20 @@
                                                           ]
                                          },
                                          {
+                                             "id":  30,
+                                             "name":  "Classic Browny",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5.5
+                                         },
+                                         {
                                              "id":  9,
                                              "name":  "Energy Bar",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
                                              "price":  4
-                                         },
-                                         {
-                                             "id":  8,
-                                             "name":  "Dates Assortment (3 Pcs)",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  2.5
-                                         },
-                                         {
-                                             "id":  35,
-                                             "name":  "Sfouf",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  3.5
-                                         },
-                                         {
-                                             "id":  10,
-                                             "name":  "Sweet Dates Fudge",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
                                          },
                                          {
                                              "id":  68,
@@ -527,14 +434,6 @@
                                              "price":  2
                                          },
                                          {
-                                             "id":  69,
-                                             "name":  "Molass Lazy Cake",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  3
-                                         },
-                                         {
                                              "id":  70,
                                              "name":  "Espresso Bliss Bite",
                                              "tag":  null,
@@ -543,23 +442,47 @@
                                              "price":  2
                                          },
                                          {
-                                             "id":  72,
-                                             "name":  "Dark Chocolate Roll",
+                                             "id":  8,
+                                             "name":  "Dates Assortment (3 Pcs)",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  8
-                                         },
-                                         {
-                                             "id":  71,
-                                             "name":  "Dark Chocolate Babka",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  5
+                                             "price":  2.5
                                          }
                                      ],
-                           "sort":  80
+                           "sort":  50
+                       },
+                       {
+                           "name":  "Soft Drinks",
+                           "items":  [
+                                         {
+                                             "id":  53,
+                                             "name":  "Still Water 330ML",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  1.5
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  54,
+                                             "name":  "Sparkling Water 330ML",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  2
+                                                              }
+                                                          ]
+                                         }
+                                     ],
+                           "sort":  60
                        },
                        {
                            "name":  "Beer",
@@ -597,7 +520,7 @@
                                              "price":  9
                                          }
                                      ],
-                           "sort":  90
+                           "sort":  70
                        },
                        {
                            "name":  "Wines",
@@ -721,7 +644,38 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  100
+                           "sort":  80
+                       },
+                       {
+                           "name":  "Breakfast",
+                           "items":  [
+                                         {
+                                             "id":  64,
+                                             "name":  "Sofi de France",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Plain Croissant",
+                                                                  "price":  3.5
+                                                              },
+                                                              {
+                                                                  "name":  "Cheese Croissant",
+                                                                  "price":  4.5
+                                                              },
+                                                              {
+                                                                  "name":  "Thyme Croissant",
+                                                                  "price":  4.5
+                                                              },
+                                                              {
+                                                                  "name":  "Pain Choco",
+                                                                  "price":  5
+                                                              }
+                                                          ]
+                                         }
+                                     ],
+                           "sort":  90
                        },
                        {
                            "name":  "Snacks",
@@ -777,6 +731,36 @@
                                          }
                                      ],
                            "sort":  110
+                       },
+                       {
+                           "name":  "Add-Ons",
+                           "items":  [
+                                         {
+                                             "id":  61,
+                                             "name":  "Milk",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  0
+                                         },
+                                         {
+                                             "id":  62,
+                                             "name":  "Syrup",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  0
+                                         },
+                                         {
+                                             "id":  63,
+                                             "name":  "Illy Espresso Shot",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  0
+                                         }
+                                     ],
+                           "sort":  120
                        }
                    ]
 }
