@@ -3,181 +3,305 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Menu</title>
+<title>DJ LAB Cafe</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
-    --gold: #c9a84c;
-    --gold-light: #e8d5a3;
-    --gold-dark: #8a6820;
-    --ink: #1a1612;
+    --coral: #FF6357;
+    --cream: #F7F0E8;
+    --ink: #1a1410;
     --ink-mid: #3d3530;
-    --ink-light: #6b6058;
-    --cream: #faf8f4;
-    --cream-dark: #f0ece3;
-    --divider: rgba(201,168,76,0.25);
+    --ink-light: #7a6e66;
+    --coral-dark: #cc3d31;
+    --coral-pale: rgba(255,99,87,0.08);
+    --coral-border: rgba(255,99,87,0.2);
+    --cream-dark: #ede5d8;
+    --divider: rgba(26,20,16,0.1);
   }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); min-height: 100vh; }
 
+  body {
+    font-family: 'DM Mono', monospace;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
   header {
-    background: var(--ink);
-    color: var(--cream);
-    text-align: center;
-    padding: 3.5rem 1.5rem 3rem;
+    background: var(--coral);
+    padding: 3rem 2rem 2.5rem;
     position: relative;
     overflow: hidden;
   }
-  header::before {
+  header::after {
     content: '';
     position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%);
-    pointer-events: none;
+    bottom: -1px; left: 0; right: 0;
+    height: 6px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--cream) 0px, var(--cream) 8px,
+      var(--coral) 8px, var(--coral) 16px
+    );
   }
-  .header-ornament {
-    display: flex; align-items: center; justify-content: center;
-    gap: 1rem; margin-bottom: 1.2rem;
+  .header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  .header-ornament::before, .header-ornament::after {
-    content: ''; height: 1px; width: 60px;
+  .logo-svg-wrap {
+    width: 100%;
+    max-width: 420px;
   }
-  .header-ornament::before { background: linear-gradient(to right, transparent, var(--gold)); }
-  .header-ornament::after  { background: linear-gradient(to left,  transparent, var(--gold)); }
-  .header-ornament span { color: var(--gold); font-size: 1.2rem; }
-  header h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.4rem, 6vw, 3.8rem);
-    font-weight: 300; letter-spacing: 0.08em; color: var(--cream); margin-bottom: 0.5rem;
+  .logo-svg-wrap svg {
+    width: 100%;
+    height: auto;
+    display: block;
   }
-  header h1 em { font-style: italic; color: var(--gold-light); }
-  .header-sub {
-    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
-    color: rgba(250,248,244,0.45); margin-top: 1.2rem;
+  .logo-cafe {
+    font-family: 'DM Mono', monospace;
+    font-size: clamp(0.85rem, 2vw, 1.05rem);
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    color: var(--cream);
+    opacity: 0.8;
+    margin-top: 0.35rem;
   }
+  .header-tagline {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: rgba(247,240,232,0.6);
+    margin-top: 1.2rem;
+    text-transform: lowercase;
+  }
+  .header-tagline::before { content: '// '; }
 
+  /* ── NAV ── */
   .nav-wrapper {
     background: var(--ink);
-    border-bottom: 1px solid rgba(201,168,76,0.2);
     position: sticky; top: 0; z-index: 100;
   }
   nav {
     display: flex; overflow-x: auto; scrollbar-width: none;
-    max-width: 900px; margin: 0 auto; padding: 0 1rem; gap: 0;
+    max-width: 900px; margin: 0 auto; padding: 0 1.5rem;
   }
   nav::-webkit-scrollbar { display: none; }
   nav a {
-    color: rgba(250,248,244,0.5); text-decoration: none;
-    font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase;
-    padding: 0.9rem 1.1rem; white-space: nowrap;
+    color: rgba(247,240,232,0.4);
+    text-decoration: none;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    padding: 0.85rem 1rem;
+    white-space: nowrap;
     border-bottom: 2px solid transparent;
-    transition: color 0.2s, border-color 0.2s; flex-shrink: 0;
+    transition: color 0.2s, border-color 0.2s;
+    flex-shrink: 0;
   }
-  nav a:hover, nav a.active { color: var(--gold-light); border-bottom-color: var(--gold); }
+  nav a::before { content: '_'; color: var(--coral); opacity: 0; transition: opacity 0.2s; }
+  nav a:hover::before, nav a.active::before { opacity: 1; }
+  nav a:hover, nav a.active { color: var(--cream); border-bottom-color: var(--coral); }
 
-  main { max-width: 900px; margin: 0 auto; padding: 0 1.25rem 5rem; }
+  /* ── MAIN ── */
+  main { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 5rem; }
 
-  .menu-section { padding-top: 3.5rem; }
+  /* ── SECTION ── */
+  .menu-section { padding-top: 4rem; }
   .section-header {
-    display: flex; align-items: center; gap: 1.5rem;
-    margin-bottom: 2rem; padding-bottom: 1rem;
-    border-bottom: 1px solid var(--divider);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--ink);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
   }
   .section-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.8rem, 4vw, 2.4rem);
-    font-weight: 400; letter-spacing: 0.03em; color: var(--ink); white-space: nowrap;
+    font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
   }
-  .section-line { flex: 1; height: 1px; background: var(--divider); }
+  .section-title::before {
+    content: '_';
+    color: var(--coral);
+    margin-right: 0.1em;
+  }
   .section-num {
-    font-size: 0.7rem; letter-spacing: 0.2em;
-    color: var(--gold-dark); font-weight: 500; white-space: nowrap;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--ink-light);
+    flex-shrink: 0;
   }
 
-  .items-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1px; background: var(--divider);
-    border: 1px solid var(--divider);
+  /* ── ITEMS ── */
+  .items-list {
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid var(--ink);
   }
   .item-card {
-    background: var(--cream); padding: 1.4rem 1.5rem;
-    display: flex; flex-direction: column; gap: 0.4rem;
-    transition: background 0.18s;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--divider);
+    transition: background 0.15s;
   }
-  .item-card:hover { background: var(--cream-dark); }
+  .item-card:last-child { border-bottom: none; }
+  .item-card:hover { background: var(--coral-pale); }
 
   .item-top {
-    display: flex; align-items: flex-start;
-    justify-content: space-between; gap: 1rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
   }
   .item-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.15rem; font-weight: 600; letter-spacing: 0.01em;
-    line-height: 1.3; color: var(--ink); flex: 1;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    flex: 1;
+  }
+  .item-dots {
+    flex: 1;
+    min-width: 20px;
+    border-bottom: 1px dotted rgba(26,20,16,0.2);
+    margin: 0 0.5rem;
+    margin-bottom: 3px;
   }
   .item-price {
-    font-size: 0.95rem; font-weight: 500; color: var(--gold-dark);
-    white-space: nowrap; letter-spacing: 0.02em; flex-shrink: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--coral-dark);
+    white-space: nowrap;
+    flex-shrink: 0;
   }
   .item-desc {
-    font-size: 0.82rem; color: var(--ink-light);
-    line-height: 1.55; font-weight: 300;
+    font-size: 0.72rem;
+    color: var(--ink-light);
+    line-height: 1.5;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0.25rem;
+    letter-spacing: 0.01em;
   }
   .item-tag {
-    display: inline-block; font-size: 0.62rem; letter-spacing: 0.15em;
-    text-transform: uppercase; color: #4a7c4e; border: 1px solid #4a7c4e;
-    padding: 1px 6px; border-radius: 2px; margin-top: 0.2rem; width: fit-content;
+    display: inline-block;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: var(--coral-dark);
+    border: 1px solid var(--coral-border);
+    padding: 1px 5px;
+    margin-top: 0.3rem;
   }
 
-  /* Portions sub-listing */
+  /* ── PORTIONS ── */
   .portions-list {
-    margin-top: 0.55rem;
-    border-top: 1px solid var(--divider);
-    padding-top: 0.55rem;
-    display: flex; flex-direction: column; gap: 0.3rem;
+    margin-top: 0.6rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--coral-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
   }
   .portion-row {
-    display: flex; justify-content: space-between; align-items: center; gap: 0.5rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0;
   }
   .portion-name {
-    font-size: 0.8rem; color: var(--ink-light); font-weight: 400; letter-spacing: 0.02em;
+    font-size: 0.78rem;
+    color: var(--ink-mid);
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .portion-dots {
+    flex: 1;
+    border-bottom: 1px dotted rgba(26,20,16,0.15);
+    margin: 0 0.4rem;
+    margin-bottom: 3px;
+    min-width: 16px;
   }
   .portion-price {
-    font-size: 0.8rem; color: var(--gold-dark); font-weight: 500;
-    white-space: nowrap; flex-shrink: 0;
+    font-size: 0.78rem;
+    color: var(--coral-dark);
+    font-weight: 400;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
+  /* ── FOOTER ── */
   footer {
-    text-align: center; padding: 2rem 1rem 3rem;
-    border-top: 1px solid var(--divider); margin-top: 3rem;
+    border-top: 2px solid var(--ink);
+    margin-top: 4rem;
+    padding: 2rem 1.5rem 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .footer-logo {
-    font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;
-    font-weight: 300; letter-spacing: 0.15em; color: var(--ink-light); margin-bottom: 0.5rem;
+  .footer-inner {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
-  .footer-update { font-size: 0.72rem; color: rgba(107,96,88,0.55); letter-spacing: 0.08em; }
+  .footer-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+  }
+  .footer-name span { color: var(--coral); }
+  .footer-update {
+    font-size: 0.65rem;
+    color: var(--ink-light);
+    letter-spacing: 0.05em;
+  }
+  .footer-update::before { content: '// '; }
 
   .state-msg {
-    text-align: center; padding: 4rem 2rem; color: var(--ink-light);
-    font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-style: italic;
+    text-align: center; padding: 4rem 2rem;
+    color: var(--ink-light); font-size: 0.9rem;
+    letter-spacing: 0.05em;
   }
 
   @media (max-width: 520px) {
-    .items-grid { grid-template-columns: 1fr; }
     .section-num { display: none; }
+    header { padding: 2rem 1.25rem 2rem; }
+    main { padding: 0 1rem 4rem; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="header-ornament"><span>✦</span></div>
-  <h1 id="restaurant-name">Our <em>Menu</em></h1>
-  <p class="header-sub">Please ask your server about allergens &amp; daily specials</p>
+  <div class="header-inner">
+    <div class="logo-svg-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1888 376" aria-label="DJ LAB Café" role="img">
+        <polygon fill="#F7F0E8" points="1778,2 1754,2 1754,14 1778,14 1778,62 1790,62 1790,14 1814,14 1814,2 1790,2"/>
+        <polygon fill="#F7F0E8" points="1874,2 1856,38 1838,2 1826,2 1826,62 1838,62 1838,26 1850,50 1862,50 1874,26 1874,62 1886,62 1886,2"/>
+        <path fill="#F7F0E8" d="M230,62v252c33.14,0,60-26.86,60-60V122C290,88.86,263.14,62,230,62z"/>
+        <path fill="#F7F0E8" d="M62,62h168c0-33.14-26.86-60-60-60H32C15.43,2,2,15.43,2,32v312c0,16.57,13.43,30,30,30h138c33.14,0,60-26.86,60-60H62V62z"/>
+        <path fill="#F7F0E8" d="M1214,2h-48c-33.14,0-60,26.86-60,60h168C1274,28.86,1247.14,2,1214,2z"/>
+        <path fill="#F7F0E8" d="M1274,62v120h-168V62c-33.14,0-60,26.86-60,60v252h60V242h168v132h60V122C1334,88.86,1307.14,62,1274,62z"/>
+        <path fill="#F7F0E8" d="M1646,2h-198c-16.57,0-30,13.43-30,30v312c0,16.57,13.43,30,30,30h30h168c33.14,0,60-26.86,60-60v-24c0-39.76-32.24-72-72-72v96h-156v-96h156v-60h-156V62h156v96c39.76,0,72-32.24,72-72V62C1706,28.86,1679.14,2,1646,2z"/>
+        <path fill="#F7F0E8" d="M794,194V2h-60v342c0,16.57,13.43,30,30,30h222v-60H794V194z"/>
+        <path fill="#F7F0E8" d="M326,374h132c33.14,0,60-26.86,60-60H326V374z"/>
+        <path fill="#F7F0E8" d="M548,2H398v60h120v252c33.14,0,60-26.86,60-60V32C578,15.43,564.57,2,548,2z"/>
+      </svg>
+    </div>
+    <div class="logo-cafe">CAFÉ</div>
+    <p class="header-tagline" id="header-tagline">ask your server about allergens &amp; daily specials</p>
+  </div>
 </header>
 
 <div class="nav-wrapper">
@@ -185,36 +309,32 @@
 </div>
 
 <main id="menu-main">
-  <p class="state-msg" id="loading-msg">Loading menu…</p>
+  <p class="state-msg" id="loading-msg">loading menu...</p>
 </main>
 
 <footer>
-  <p class="footer-logo" id="footer-name"></p>
-  <p class="footer-update" id="footer-update"></p>
+  <div class="footer-inner">
+    <p class="footer-name">DJ <span>LAB</span> Café</p>
+    <p class="footer-update" id="footer-update"></p>
+  </div>
 </footer>
 
 <script>
 (async () => {
-  const MENU_URL = 'menu.json';
   let data;
   try {
-    const res = await fetch(MENU_URL + '?v=' + Date.now());
+    const res = await fetch('menu.json?v=' + Date.now());
     if (!res.ok) throw new Error(res.status);
     data = await res.json();
   } catch (e) {
-    document.getElementById('loading-msg').textContent = 'Menu unavailable — please ask your server.';
+    document.getElementById('loading-msg').textContent = 'menu unavailable — please ask your server.';
     return;
   }
-
-  const title = data.restaurant || 'Our Menu';
-  document.title = title;
-  document.getElementById('restaurant-name').innerHTML = formatTitle(title);
-  document.getElementById('footer-name').textContent = title;
 
   if (data.updatedAt) {
     const d = new Date(data.updatedAt);
     document.getElementById('footer-update').textContent =
-      'Menu updated ' + d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      'updated ' + d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
   }
 
   const currency = data.currency || '$';
@@ -227,7 +347,7 @@
 
     const a = document.createElement('a');
     a.href = '#' + catId;
-    a.textContent = cat.name;
+    a.textContent = cat.name.toLowerCase();
     if (idx === 0) a.classList.add('active');
     nav.appendChild(a);
 
@@ -237,14 +357,13 @@
 
     section.innerHTML = `
       <div class="section-header">
-        <h2 class="section-title">${esc(cat.name)}</h2>
-        <div class="section-line"></div>
+        <h2 class="section-title">${esc(cat.name.toLowerCase())}</h2>
         <span class="section-num">${String(idx + 1).padStart(2, '0')}</span>
       </div>
     `;
 
-    const grid = document.createElement('div');
-    grid.className = 'items-grid';
+    const list = document.createElement('div');
+    list.className = 'items-list';
 
     (cat.items || []).forEach(item => {
       const card = document.createElement('div');
@@ -252,9 +371,8 @@
 
       const hasPortions = item.portions && item.portions.length > 0;
 
-      // Top row: name + price (price only if no portions)
       const priceHtml = !hasPortions
-        ? `<span class="item-price">${item.price > 0 ? currency + Number(item.price).toFixed(2) : 'Ask server'}</span>`
+        ? `<div class="item-dots"></div><span class="item-price">${item.price > 0 ? currency + Number(item.price).toFixed(2) : 'ask server'}</span>`
         : '';
 
       const descHtml = item.description
@@ -265,13 +383,13 @@
         ? `<span class="item-tag">${esc(item.tag)}</span>`
         : '';
 
-      // Portions sub-listing
       let portionsHtml = '';
       if (hasPortions) {
         const rows = item.portions.map(p => `
           <div class="portion-row">
-            <span class="portion-name">${esc(p.name)}</span>
-            <span class="portion-price">${p.price > 0 ? currency + Number(p.price).toFixed(2) : 'Ask server'}</span>
+            <span class="portion-name">${esc(p.name.toLowerCase())}</span>
+            <div class="portion-dots"></div>
+            <span class="portion-price">${p.price > 0 ? currency + Number(p.price).toFixed(2) : 'ask server'}</span>
           </div>
         `).join('');
         portionsHtml = `<div class="portions-list">${rows}</div>`;
@@ -279,17 +397,17 @@
 
       card.innerHTML = `
         <div class="item-top">
-          <span class="item-name">${esc(item.name)}</span>
+          <span class="item-name">${esc(item.name.toLowerCase())}</span>
           ${priceHtml}
         </div>
         ${descHtml}
         ${portionsHtml}
         ${tagHtml}
       `;
-      grid.appendChild(card);
+      list.appendChild(card);
     });
 
-    section.appendChild(grid);
+    section.appendChild(list);
     main.appendChild(section);
   });
 
@@ -315,13 +433,6 @@ function esc(str) {
   return String(str || '')
     .replace(/&/g,'&amp;').replace(/</g,'&lt;')
     .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
-function formatTitle(name) {
-  const words = name.trim().split(' ');
-  if (words.length === 1) return name + ' <em>Menu</em>';
-  const last = words.pop();
-  return words.join(' ') + ' <em>' + last + '</em>';
 }
 </script>
 </body>
