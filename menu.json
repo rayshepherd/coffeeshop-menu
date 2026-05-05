@@ -2,34 +2,31 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-05T00:30:04.1519929+03:00",
+    "updatedAt":  "2026-05-05T17:17:56.1866027+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
                            "items":  [
                                          {
                                              "id":  37,
-                                             "name":  "Illy Espresso Single",
+                                             "name":  "Illy Espresso",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  3
-                                         },
-                                         {
-                                             "id":  38,
-                                             "name":  "Illy Espresso Double",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  4
-                                         },
-                                         {
-                                             "id":  41,
-                                             "name":  "Illy Lungo",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  4
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Single",
+                                                                  "price":  3
+                                                              },
+                                                              {
+                                                                  "name":  "Double",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Lungo",
+                                                                  "price":  4
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  39,
@@ -41,7 +38,7 @@
                                          },
                                          {
                                              "id":  40,
-                                             "name":  "French Press",
+                                             "name":  "Illy French Press",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
