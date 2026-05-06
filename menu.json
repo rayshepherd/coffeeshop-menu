@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-06T00:30:04.7914821+03:00",
+    "updatedAt":  "2026-05-06T23:35:41.0384184+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -34,7 +34,16 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  4.5
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Hot",
+                                                                  "price":  4.5
+                                                              },
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  4.5
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  40,
@@ -51,12 +60,28 @@
                                              "image":  "",
                                              "description":  "",
                                              "price":  2.5
+                                         },
+                                         {
+                                             "id":  17,
+                                             "name":  "Cold Brew",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
+                                         },
+                                         {
+                                             "id":  21,
+                                             "name":  "Tokyo Iced",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  4
                                          }
                                      ],
                            "sort":  10
                        },
                        {
-                           "name":  "Latte-Based",
+                           "name":  "Latte",
                            "items":  [
                                          {
                                              "id":  42,
@@ -64,7 +89,16 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  5
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Hot",
+                                                                  "price":  5
+                                                              },
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  5
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  4,
@@ -73,22 +107,6 @@
                                              "image":  "",
                                              "description":  "",
                                              "price":  5
-                                         },
-                                         {
-                                             "id":  44,
-                                             "name":  "Mocha",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
-                                             "id":  1,
-                                             "name":  "White Mocha",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
                                          },
                                          {
                                              "id":  6,
@@ -104,7 +122,50 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  6
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Hot",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  6
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  44,
+                                             "name":  "Mocha",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Hot",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  6
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  1,
+                                             "name":  "White Mocha",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Hot",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  6
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  2,
@@ -112,7 +173,16 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  6
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Hot",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  6
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  3,
@@ -120,7 +190,16 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  6
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Hot",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  6
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  7,
@@ -128,120 +207,36 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  6
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Hot",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  6
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  5,
-                                             "name":  "Hot Chocolate",
+                                             "name":  "Chocolate Latte",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  5
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Hot",
+                                                                  "price":  5
+                                                              },
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  5
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  20
-                       },
-                       {
-                           "name":  "Cold Beverages",
-                           "items":  [
-                                         {
-                                             "id":  17,
-                                             "name":  "Cold Brew",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  5
-                                         },
-                                         {
-                                             "id":  28,
-                                             "name":  "Iced Americano",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  4.5
-                                         },
-                                         {
-                                             "id":  21,
-                                             "name":  "Tokyo Iced",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  4
-                                         },
-                                         {
-                                             "id":  23,
-                                             "name":  "Iced Latte",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  5
-                                         },
-                                         {
-                                             "id":  25,
-                                             "name":  "Iced Mocha",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
-                                             "id":  26,
-                                             "name":  "Iced White Mocha",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
-                                             "id":  22,
-                                             "name":  "Iced Spanish Latte",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
-                                             "id":  24,
-                                             "name":  "Iced Salted Caramel",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
-                                             "id":  27,
-                                             "name":  "Iced Caramel Macchiato",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
-                                             "id":  19,
-                                             "name":  "Iced Matcha",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
-                                         },
-                                         {
-                                             "id":  20,
-                                             "name":  "Iced Chocolate",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  5
-                                         },
-                                         {
-                                             "id":  18,
-                                             "name":  "Ice Tea",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  5
-                                         }
-                                     ],
-                           "sort":  30
                        },
                        {
                            "name":  "Tea",
@@ -313,6 +308,14 @@
                                                                   "price":  6
                                                               }
                                                           ]
+                                         },
+                                         {
+                                             "id":  18,
+                                             "name":  "Ice Tea",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  5
                                          }
                                      ],
                            "sort":  40
@@ -360,8 +363,8 @@
                                              "description":  "",
                                              "portions":  [
                                                               {
-                                                                  "name":  "Banana",
-                                                                  "price":  4
+                                                                  "name":  "Banana Walnut",
+                                                                  "price":  5
                                                               },
                                                               {
                                                                   "name":  "Orange",
@@ -467,6 +470,23 @@
                                              "image":  "",
                                              "description":  "",
                                              "price":  2
+                                         },
+                                         {
+                                             "id":  74,
+                                             "name":  "RedBull",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Original",
+                                                                  "price":  5
+                                                              },
+                                                              {
+                                                                  "name":  "Sugar-Free",
+                                                                  "price":  5
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  60
