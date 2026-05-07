@@ -202,6 +202,17 @@
     margin-top: 0.3rem;
   }
 
+  /* ── FLAVOR TAGS (same-price portions) ── */
+  .portion-flavors {
+    font-size: 0.72rem;
+    font-weight: 300;
+    color: var(--ink-light);
+    letter-spacing: 0.03em;
+    margin-top: 0.2rem;
+    padding-left: 0.1rem;
+    line-height: 1.6;
+  }
+
   /* ── COLUMN TABLE LAYOUT ── */
   .portion-header-row {
     display: flex;
@@ -497,21 +508,35 @@
                     + '<span class="item-portion-inline">hot / iced</span>'
                     + '<div class="item-dots"></div><span class="item-price">' + pStr + '</span></div>';
           } else {
-            // Sub-lines layout: item name bold on top, portions as indented lines below
-            const subLines = item.portions.map(p => {
-              const pStr = p.price > 0 ? currency + Number(p.price).toFixed(2) : (p.price === 0 ? 'free' : 'ask');
-              return '<div class="portion-row"><span class="portion-name">' + esc(p.name.toLowerCase()) + '</span><div class="portion-dots"></div><span class="portion-price">' + pStr + '</span></div>';
-            }).join('');
-            rowHtml = '<div class="item-top"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span></div>'
-                    + '<div class="portions-list">' + subLines + '</div>';
+            // Check if all portions share the same price
+            const allSamePrice = item.portions.every(p => p.price === item.portions[0].price);
+
+            if (allSamePrice) {
+              // Price once on item line, flavor names as inline dot-separated tags below
+              const pStr = item.portions[0].price > 0 ? currency + Number(item.portions[0].price).toFixed(2) : 'free';
+              const flavors = item.portions.map(p => esc(p.name.toLowerCase())).join(' · ');
+              rowHtml = '<div class="item-top"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span>'
+                      + '<div class="item-dots"></div><span class="item-price">' + pStr + '</span></div>'
+                      + '<div class="portion-flavors">' + flavors + '</div>';
+            } else {
+              // Different prices — sub-lines with individual prices
+              const subLines = item.portions.map(p => {
+                const pStr = p.price > 0 ? currency + Number(p.price).toFixed(2) : (p.price === 0 ? 'free' : 'ask');
+                return '<div class="portion-row"><span class="portion-name">' + esc(p.name.toLowerCase()) + '</span><div class="portion-dots"></div><span class="portion-price">' + pStr + '</span></div>';
+              }).join('');
+              rowHtml = '<div class="item-top"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span></div>'
+                      + '<div class="portions-list">' + subLines + '</div>';
+            }
           }
         }
 
       } else if (collapseHotIced) {
-        // Single hot/iced column
+        // Inline hot/iced pill per item (same as Americano style)
         const price = hasPortions ? item.portions[0].price : item.price;
         const pStr = price > 0 ? currency + Number(price).toFixed(2) : (price === 0 ? 'free' : 'ask');
-        rowHtml = '<div class="item-row-cols"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span><span class="portion-cell">' + pStr + '</span></div>';
+        rowHtml = '<div class="item-top"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span>'
+                + '<span class="item-portion-inline">hot / iced</span>'
+                + '<div class="item-dots"></div><span class="item-price">' + pStr + '</span></div>';
 
       } else {
         // Multi-column (Cup/Pot, Glass/Bottle/Retail, etc.)
