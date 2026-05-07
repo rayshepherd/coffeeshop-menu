@@ -287,6 +287,39 @@
     border-radius: 2px;
     align-self: center;
   }
+  /* On narrow screens, move pill below name */
+  .item-top-wrap {
+    display: contents;
+  }
+  @media (max-width: 600px) {
+    .item-top {
+      flex-wrap: wrap;
+    }
+    .item-portion-inline {
+      order: 3;
+      width: 100%;
+      margin: 0.2rem 0 0.1rem 0;
+      display: inline-block;
+      width: auto;
+    }
+    .item-top .item-dots {
+      order: 4;
+    }
+    .item-top .item-price {
+      order: 5;
+    }
+    .item-top .item-name {
+      order: 1;
+      flex: 1 1 100%;
+    }
+    /* When pill is present, name takes full width and pill + dots + price go on next line */
+    .item-top:has(.item-portion-inline) .item-name {
+      flex: 1 1 100%;
+    }
+    .item-top:has(.item-portion-inline) .item-dots {
+      flex: 1;
+    }
+  }
 
   /* ── PORTIONS ── */
   .portions-list {
