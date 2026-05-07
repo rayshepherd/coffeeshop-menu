@@ -473,8 +473,8 @@
       ? ['hot / iced']
       : (matchedColSet ? matchedColSet : []);
 
-    // Column header row (only for column layout)
-    if (useColumnLayout) {
+    // Column header row (only for multi-column layout, not hot/iced collapse)
+    if (useColumnLayout && !collapseHotIced) {
       const headerRow = document.createElement('div');
       headerRow.className = 'portion-header-row';
       headerRow.innerHTML = '<span class="portion-header-name"></span>' +
@@ -531,12 +531,19 @@
         }
 
       } else if (collapseHotIced) {
-        // Inline hot/iced pill per item (same as Americano style)
-        const price = hasPortions ? item.portions[0].price : item.price;
-        const pStr = price > 0 ? currency + Number(price).toFixed(2) : (price === 0 ? 'free' : 'ask');
-        rowHtml = '<div class="item-top"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span>'
-                + '<span class="item-portion-inline">hot / iced</span>'
-                + '<div class="item-dots"></div><span class="item-price">' + pStr + '</span></div>';
+        // Inline hot/iced pill only when item actually has Hot/Iced portions
+        if (hasPortions) {
+          const price = item.portions[0].price;
+          const pStr = price > 0 ? currency + Number(price).toFixed(2) : 'free';
+          rowHtml = '<div class="item-top"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span>'
+                  + '<span class="item-portion-inline">hot / iced</span>'
+                  + '<div class="item-dots"></div><span class="item-price">' + pStr + '</span></div>';
+        } else {
+          // Hot-only item (no portions) — simple line, no pill
+          const pStr = item.price > 0 ? currency + Number(item.price).toFixed(2) : 'free';
+          rowHtml = '<div class="item-top"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span>'
+                  + '<div class="item-dots"></div><span class="item-price">' + pStr + '</span></div>';
+        }
 
       } else {
         // Multi-column (Cup/Pot, Glass/Bottle/Retail, etc.)
