@@ -202,6 +202,49 @@
     margin-top: 0.3rem;
   }
 
+  /* ── COLUMN TABLE LAYOUT ── */
+  .portion-header-row {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 1.25rem;
+    border-bottom: 1px solid var(--divider);
+    background: rgba(26,20,16,0.03);
+  }
+  .portion-header-name {
+    flex: 1;
+  }
+  .portion-header-col {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--coral-dark);
+    text-transform: lowercase;
+    width: 72px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .item-row-cols {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+  .item-row-cols .item-name {
+    flex: 1;
+  }
+  .portion-cell {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--coral-dark);
+    width: 72px;
+    text-align: right;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .portion-cell--empty {
+    color: var(--ink-light);
+    opacity: 0.4;
+  }
+
   /* ── INLINE PORTION LABEL (hot / iced) ── */
   .item-portion-inline {
     font-size: 0.7rem;
@@ -380,45 +423,114 @@
     const list = document.createElement('div');
     list.className = 'items-list';
 
+    // ── Determine column strategy for this category ──
+    // Column layout applies ONLY for these specific portion sets:
+    const COLUMN_SETS = [
+      ['hot', 'iced'],
+      ['cup', 'pot'],
+      ['glass', 'bottle', 'retail'],
+      ['bottle', 'retail'],
+      ['glass', 'bottle'],
+    ];
+
+    // Collect all unique portion names in this category
+    const allPortionNames = [];
+    (cat.items || []).forEach(item => {
+      if (item.portions) item.portions.forEach(p => {
+        if (!allPortionNames.includes(p.name)) allPortionNames.push(p.name);
+      });
+    });
+    const lowerPortionNames = allPortionNames.map(n => n.toLowerCase()).sort();
+
+    // Check if this category's portions match a column set
+    const matchedColSet = COLUMN_SETS.find(set =>
+      JSON.stringify([...set].sort()) === JSON.stringify(lowerPortionNames)
+    );
+
+    // Hot/Iced collapse: same price on every item that has both
+    const isHotIced = matchedColSet && JSON.stringify(matchedColSet) === JSON.stringify(['hot','iced']);
+    const hotIcedSamePrice = isHotIced && (cat.items || []).every(item => {
+      if (!item.portions) return true;
+      const hot  = item.portions.find(p => p.name.toLowerCase() === 'hot');
+      const iced = item.portions.find(p => p.name.toLowerCase() === 'iced');
+      return (hot && iced) ? hot.price === iced.price : true;
+    });
+    const collapseHotIced = isHotIced && hotIcedSamePrice;
+
+    const useColumnLayout = !!matchedColSet;
+    const columns = collapseHotIced
+      ? ['hot / iced']
+      : (matchedColSet ? matchedColSet : []);
+
+    // Column header row (only for column layout)
+    if (useColumnLayout) {
+      const headerRow = document.createElement('div');
+      headerRow.className = 'portion-header-row';
+      headerRow.innerHTML = '<span class="portion-header-name"></span>' +
+        columns.map(c => '<span class="portion-header-col">' + esc(c.toLowerCase()) + '</span>').join('');
+      list.appendChild(headerRow);
+    }
+
     (cat.items || []).forEach(item => {
       const card = document.createElement('div');
       card.className = 'item-card';
-
+      const descHtml = item.description ? '<p class="item-desc">' + esc(item.description) + '</p>' : '';
+      const tagHtml  = item.tag ? '<span class="item-tag">' + esc(item.tag) + '</span>' : '';
       const hasPortions = item.portions && item.portions.length > 0;
+      let rowHtml = '';
 
-      const priceHtml = !hasPortions
-        ? `<div class="item-dots"></div><span class="item-price">${item.price > 0 ? currency + Number(item.price).toFixed(2) : 'ask server'}</span>`
-        : '';
+      if (!useColumnLayout) {
+        if (!hasPortions) {
+          // Simple item — name ··· price
+          const p = item.price >= 0 ? (item.price > 0 ? currency + Number(item.price).toFixed(2) : 'free') : 'ask';
+          rowHtml = '<div class="item-top"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span><div class="item-dots"></div><span class="item-price">' + p + '</span></div>';
+        } else {
+          // Per-item Hot/Iced collapse: if this item has exactly Hot+Iced at the same price, inline it
+          const itemLowerPortions = item.portions.map(p => p.name.toLowerCase()).sort();
+          const itemIsHotIced = itemLowerPortions.join(',') === 'hot,iced';
+          const itemHotIcedSame = itemIsHotIced && item.portions[0].price === item.portions[1].price;
 
-      const descHtml = item.description
-        ? `<p class="item-desc">${esc(item.description)}</p>`
-        : '';
+          if (itemHotIcedSame) {
+            const price = item.portions[0].price;
+            const pStr = price > 0 ? currency + Number(price).toFixed(2) : 'free';
+            rowHtml = '<div class="item-top"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span>'
+                    + '<span class="item-portion-inline">hot / iced</span>'
+                    + '<div class="item-dots"></div><span class="item-price">' + pStr + '</span></div>';
+          } else {
+            // Sub-lines layout: item name bold on top, portions as indented lines below
+            const subLines = item.portions.map(p => {
+              const pStr = p.price > 0 ? currency + Number(p.price).toFixed(2) : (p.price === 0 ? 'free' : 'ask');
+              return '<div class="portion-row"><span class="portion-name">' + esc(p.name.toLowerCase()) + '</span><div class="portion-dots"></div><span class="portion-price">' + pStr + '</span></div>';
+            }).join('');
+            rowHtml = '<div class="item-top"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span></div>'
+                    + '<div class="portions-list">' + subLines + '</div>';
+          }
+        }
 
-      const tagHtml = item.tag
-        ? `<span class="item-tag">${esc(item.tag)}</span>`
-        : '';
+      } else if (collapseHotIced) {
+        // Single hot/iced column
+        const price = hasPortions ? item.portions[0].price : item.price;
+        const pStr = price > 0 ? currency + Number(price).toFixed(2) : (price === 0 ? 'free' : 'ask');
+        rowHtml = '<div class="item-row-cols"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span><span class="portion-cell">' + pStr + '</span></div>';
 
-      let portionsHtml = '';
-      if (hasPortions) {
-        const rows = item.portions.map(p => `
-          <div class="portion-row">
-            <span class="portion-name">${esc(p.name.toLowerCase())}</span>
-            <div class="portion-dots"></div>
-            <span class="portion-price">${p.price > 0 ? currency + Number(p.price).toFixed(2) : 'ask server'}</span>
-          </div>
-        `).join('');
-        portionsHtml = `<div class="portions-list">${rows}</div>`;
+      } else {
+        // Multi-column (Cup/Pot, Glass/Bottle/Retail, etc.)
+        const cells = columns.map(col => {
+          const p = hasPortions ? item.portions.find(p => p.name.toLowerCase() === col.toLowerCase()) : null;
+          if (p) {
+            return '<span class="portion-cell">' + (p.price > 0 ? currency + Number(p.price).toFixed(2) : 'ask') + '</span>';
+          } else if (!hasPortions) {
+            return col === columns[0]
+              ? '<span class="portion-cell">' + (item.price > 0 ? currency + Number(item.price).toFixed(2) : 'ask') + '</span>'
+              : '<span class="portion-cell portion-cell--empty">—</span>';
+          } else {
+            return '<span class="portion-cell portion-cell--empty">—</span>';
+          }
+        }).join('');
+        rowHtml = '<div class="item-row-cols"><span class="item-name">' + esc(item.name.toLowerCase()) + '</span>' + cells + '</div>';
       }
 
-      card.innerHTML = `
-        <div class="item-top">
-          <span class="item-name">${esc(item.name.toLowerCase())}</span>
-          ${priceHtml}
-        </div>
-        ${descHtml}
-        ${portionsHtml}
-        ${tagHtml}
-      `;
+      card.innerHTML = rowHtml + descHtml + tagHtml;
       list.appendChild(card);
     });
 
