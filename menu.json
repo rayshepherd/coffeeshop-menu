@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-07T10:21:15.9858469+03:00",
+    "updatedAt":  "2026-05-07T22:26:57.5115338+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -349,7 +349,7 @@
                                          },
                                          {
                                              "id":  69,
-                                             "name":  "Molass Lazy Cake",
+                                             "name":  "Molasses Lazy Cake",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
@@ -496,35 +496,28 @@
                            "items":  [
                                          {
                                              "id":  11,
-                                             "name":  "Elmir Pilsner",
+                                             "name":  "Elmir",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  8
-                                         },
-                                         {
-                                             "id":  12,
-                                             "name":  "Elmir India Pale Ale",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  8
-                                         },
-                                         {
-                                             "id":  13,
-                                             "name":  "Elmir Amber Ale",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  8
-                                         },
-                                         {
-                                             "id":  14,
-                                             "name":  "Elmir Anfé",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  9
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Pilsner",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Indian Pale Ale",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Amber Ale",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Anfé",
+                                                                  "price":  9
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  70
