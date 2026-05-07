@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-07T22:56:10.3597013+03:00",
+    "updatedAt":  "2026-05-07T23:20:51.7759375+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -523,14 +523,14 @@
                            "sort":  70
                        },
                        {
-                           "name":  "Wines",
+                           "name":  "Wine",
                            "items":  [
                                          {
                                              "id":  15,
-                                             "name":  "Mersel LebNat Gold",
+                                             "name":  "LebNat Gold by Mersel",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "",
+                                             "description":  "natural sparkling petnat white wine. merwah 50%, viognier 50%",
                                              "portions":  [
                                                               {
                                                                   "name":  "Bottle",
@@ -544,10 +544,10 @@
                                          },
                                          {
                                              "id":  46,
-                                             "name":  "Mersel Red Velvet",
+                                             "name":  "Red Velvet by Mersel",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "",
+                                             "description":  "light red whole cluster still wine. cinsaut 100%. farmed organically.",
                                              "portions":  [
                                                               {
                                                                   "name":  "Glass",
@@ -565,10 +565,10 @@
                                          },
                                          {
                                              "id":  48,
-                                             "name":  "Mersel Elevate Red",
+                                             "name":  "Elevate by Mersel, Pinot Noir",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "",
+                                             "description":  "red still wine. 100% pinot noir organically grown on limestone terroirs at 1800m altitude",
                                              "portions":  [
                                                               {
                                                                   "name":  "Bottle",
@@ -582,10 +582,10 @@
                                          },
                                          {
                                              "id":  47,
-                                             "name":  "Mersel Jaffa Crush",
+                                             "name":  "Jaffa Crush by Mersel",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "",
+                                             "description":  "carbonic still orange wine aged in amphora. merwah 70%, muscat 30%",
                                              "portions":  [
                                                               {
                                                                   "name":  "Glass",
@@ -606,7 +606,7 @@
                                              "name":  "Nour by Heya",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "Direct Press Obeideh \u0026 White Grenache, made from Organic grapes \u0026 minimal wine making",
+                                             "description":  "direct press obeideh \u0026 white grenache, made from organic grapes \u0026 minimal winemaking",
                                              "portions":  [
                                                               {
                                                                   "name":  "Glass",
@@ -627,7 +627,7 @@
                                              "name":  "Ward by Heya",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "Direct Press Syrah Rosé Wine made from Organic grapes and minimal winemaking.",
+                                             "description":  "direct press syrah rosé wine made from organic grapes and minimal winemaking",
                                              "portions":  [
                                                               {
                                                                   "name":  "Glass",
@@ -669,7 +669,7 @@
                                                                   "price":  4.5
                                                               },
                                                               {
-                                                                  "name":  "Pain Choco",
+                                                                  "name":  "Pain au Chocolat",
                                                                   "price":  5
                                                               }
                                                           ]
