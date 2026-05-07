@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-07T23:20:51.7759375+03:00",
+    "updatedAt":  "2026-05-08T00:30:04.1017129+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -457,7 +457,7 @@
                            "items":  [
                                          {
                                              "id":  53,
-                                             "name":  "Still Water 330ML",
+                                             "name":  "Still Water",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
@@ -465,7 +465,7 @@
                                          },
                                          {
                                              "id":  54,
-                                             "name":  "Sparkling Water 330ML",
+                                             "name":  "Sparkling Water",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
