@@ -120,7 +120,7 @@
     padding-bottom: 0.75rem;
     border-bottom: 2px solid var(--ink);
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     gap: 1rem;
   }
@@ -134,6 +134,21 @@
     content: '_';
     color: var(--coral);
     margin-right: 0.1em;
+  }
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: var(--divider);
+    min-width: 20px;
+  }
+  .section-logos {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+  }
+  .section-logos img {
+    display: block;
   }
   .section-num {
     font-size: 0.65rem;
@@ -344,7 +359,22 @@
   }
 
   @media (max-width: 520px) {
-    .section-num { display: none; }
+    .section-line {
+    flex: 1;
+    height: 1px;
+    background: var(--divider);
+    min-width: 20px;
+  }
+  .section-logos {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+  }
+  .section-logos img {
+    display: block;
+  }
+  .section-num { display: none; }
     header { padding: 2rem 1.25rem 2rem; }
     main { padding: 0 1rem 4rem; }
   }
@@ -411,7 +441,25 @@
   const main = document.getElementById('menu-main');
   main.innerHTML = '';
 
-  (data.categories || []).forEach((cat, idx) => {
+  // Categories to hide from public menu
+  const HIDDEN_CATEGORIES = ['add-ons', 'add ons'];
+
+  // Partner logos per category name (lowercase)
+  const CATEGORY_LOGOS = {
+    'black coffee': [{ src: 'assets/illy.png',   alt: 'illy',   style: 'height:28px;' }],
+    'latte':        [{ src: 'assets/illy.png',   alt: 'illy',   style: 'height:28px;' }],
+    'beer':         [{ src: 'assets/elmir.svg',  alt: 'elmir',  style: 'height:24px;filter:invert(1) brightness(0.3)' }],
+    'wines':        [
+      { src: 'assets/mersel.jpg', alt: 'mersel', style: 'height:36px;' },
+      { src: 'assets/heya.avif',  alt: 'heya',   style: 'height:30px;' }
+    ],
+  };
+
+  const visibleCats = (data.categories || []).filter(cat =>
+    !HIDDEN_CATEGORIES.includes(cat.name.toLowerCase())
+  );
+
+  visibleCats.forEach((cat, idx) => {
     const catId = 'cat-' + idx;
 
     const a = document.createElement('a');
@@ -424,12 +472,18 @@
     section.className = 'menu-section';
     section.id = catId;
 
-    section.innerHTML = `
-      <div class="section-header">
-        <h2 class="section-title">${esc(cat.name.toLowerCase())}</h2>
-        <span class="section-num">${String(idx + 1).padStart(2, '0')}</span>
-      </div>
-    `;
+    const logos = CATEGORY_LOGOS[cat.name.toLowerCase()] || [];
+    const logosHtml = logos.map(l =>
+      '<img src="' + l.src + '" alt="' + l.alt + '" style="object-fit:contain;flex-shrink:0;' + l.style + '" />'
+    ).join('');
+
+    section.innerHTML =
+      '<div class="section-header">' +
+        '<h2 class="section-title">' + esc(cat.name.toLowerCase()) + '</h2>' +
+        '<div class="section-line"></div>' +
+        (logosHtml ? '<div class="section-logos">' + logosHtml + '</div>' : '') +
+        '<span class="section-num">' + String(idx + 1).padStart(2, '0') + '</span>' +
+      '</div>';
 
     const list = document.createElement('div');
     list.className = 'items-list';
