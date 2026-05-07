@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-07T10:12:06.4514230+03:00",
+    "updatedAt":  "2026-05-07T10:14:52.0494825+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -537,7 +537,7 @@
                                              "name":  "Mersel LebNat Gold",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "",
+                                             "description":  "Ipsum Lorem ",
                                              "portions":  [
                                                               {
                                                                   "name":  "Bottle",
