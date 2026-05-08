@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-08T00:30:04.1017129+03:00",
+    "updatedAt":  "2026-05-08T09:33:17.8883644+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -499,14 +499,14 @@
                                              "name":  "Elmir",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "",
+                                             "description":  "beer. naturally. authentic, natural, free from preservatives \u0026 additives. elmir beer is created naturally by\r\ncarefully selecting the world\u0027s finest ingredients to offer an intense experience for the senses.",
                                              "portions":  [
                                                               {
                                                                   "name":  "Pilsner",
                                                                   "price":  8
                                                               },
                                                               {
-                                                                  "name":  "Indian Pale Ale",
+                                                                  "name":  "India Pale Ale",
                                                                   "price":  8
                                                               },
                                                               {
