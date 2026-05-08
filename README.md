@@ -165,3 +165,56 @@ To add descriptions or photos, edit `docs/menu.json` manually:
 SELECT * FROM MenuItemPortions WHERE MenuItemId = 1
 ```
 If empty, try `SELECT * FROM Prices` to find the correct table and update the SQL query in the script.
+
+---
+
+## ⚠️ Category Name Changes
+
+The HTML file hardcodes category names for two features:
+1. **Partner logos** — mapped in `CATEGORY_LOGOS` in `index.html`
+2. **Hidden categories** — listed in `HIDDEN_CATEGORIES` in `index.html`
+
+If you rename a category in SambaPOS, you must update `index.html` to match.
+
+### Updating a category name
+
+Open `index.html` and find the `CATEGORY_LOGOS` object near the top of the `<script>` section:
+
+```javascript
+const CATEGORY_LOGOS = {
+  'black coffee': [...],
+  'latte':        [...],
+  'beer':         [...],
+  'wine':         [...],
+  'breakfast':    [...],
+  'desserts':     [...],
+};
+```
+
+Change the key to match the new category name **in lowercase**. For example, if you rename "Wine" to "Wines" in SambaPOS:
+```javascript
+'wines': [...]   // ← update this
+```
+
+Then push the updated `index.html`:
+```powershell
+git add index.html
+git commit -m "Update category name in logos map"
+git push
+```
+
+### Adding a new category with a logo
+
+Add a new line to `CATEGORY_LOGOS`:
+```javascript
+'my new category': [{ src: 'assets/mylogo.png', alt: 'my logo', style: 'height:30px;' }],
+```
+
+Place the logo file in the `assets/` folder and push both the logo and `index.html`.
+
+### Hidden categories
+
+If you add a new internal/operational category in SambaPOS that should not appear on the public menu, add its name (lowercase) to `HIDDEN_CATEGORIES`:
+```javascript
+const HIDDEN_CATEGORIES = ['add-ons', 'my internal category'];
+```
