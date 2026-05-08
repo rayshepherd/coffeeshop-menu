@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-08T09:40:34.2408233+03:00",
+    "updatedAt":  "2026-05-08T09:42:55.6325738+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -499,7 +499,7 @@
                                              "name":  "Elmir",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "beer. naturally. authentic, natural, made from the world\u0027s finest ingredients. free from preservatives \u0026 additives.",
+                                             "description":  "made from the world\u0027s finest ingredients. free from preservatives \u0026 additives.",
                                              "portions":  [
                                                               {
                                                                   "name":  "Pilsner",
