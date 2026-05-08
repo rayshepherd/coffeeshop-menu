@@ -2,14 +2,14 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-08T09:42:55.6325738+03:00",
+    "updatedAt":  "2026-05-08T10:33:51.8395009+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
                            "items":  [
                                          {
                                              "id":  37,
-                                             "name":  "Illy Espresso",
+                                             "name":  "Espresso",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
@@ -30,7 +30,7 @@
                                          },
                                          {
                                              "id":  39,
-                                             "name":  "Illy Americano",
+                                             "name":  "Americano",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
@@ -47,7 +47,7 @@
                                          },
                                          {
                                              "id":  40,
-                                             "name":  "Illy French Press",
+                                             "name":  "French Press",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
@@ -526,23 +526,6 @@
                            "name":  "Wine",
                            "items":  [
                                          {
-                                             "id":  15,
-                                             "name":  "LebNat Gold by Mersel",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "natural sparkling petnat white wine. merwah 50%, viognier 50%",
-                                             "portions":  [
-                                                              {
-                                                                  "name":  "Bottle",
-                                                                  "price":  38
-                                                              },
-                                                              {
-                                                                  "name":  "Retail",
-                                                                  "price":  23
-                                                              }
-                                                          ]
-                                         },
-                                         {
                                              "id":  46,
                                              "name":  "Red Velvet by Mersel",
                                              "tag":  null,
@@ -640,6 +623,23 @@
                                                               {
                                                                   "name":  "Retail",
                                                                   "price":  21
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  15,
+                                             "name":  "LebNat Gold by Mersel",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "natural sparkling petnat white wine. merwah 50%, viognier 50%",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  38
+                                                              },
+                                                              {
+                                                                  "name":  "Retail",
+                                                                  "price":  23
                                                               }
                                                           ]
                                          }
