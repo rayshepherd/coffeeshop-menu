@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-13T00:30:05.7630748+03:00",
+    "updatedAt":  "2026-05-14T00:30:05.0628554+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -376,6 +376,10 @@
                                                               },
                                                               {
                                                                   "name":  "Dark Chocolate",
+                                                                  "price":  5
+                                                              },
+                                                              {
+                                                                  "name":  "Carrot Walnut",
                                                                   "price":  5
                                                               }
                                                           ]
