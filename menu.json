@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-15T00:30:05.4822224+03:00",
+    "updatedAt":  "2026-05-15T20:23:16.0542770+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -311,7 +311,7 @@
                                          },
                                          {
                                              "id":  18,
-                                             "name":  "Ice Tea",
+                                             "name":  "Iced Tea",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
@@ -415,7 +415,7 @@
                                          },
                                          {
                                              "id":  30,
-                                             "name":  "Classic Browny",
+                                             "name":  "Classic Brownie",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
