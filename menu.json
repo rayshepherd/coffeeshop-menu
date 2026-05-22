@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-22T00:30:04.8930327+03:00",
+    "updatedAt":  "2026-05-23T00:30:03.8375159+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -318,7 +318,7 @@
                                              "price":  5
                                          }
                                      ],
-                           "sort":  40
+                           "sort":  30
                        },
                        {
                            "name":  "Desserts",
@@ -454,7 +454,7 @@
                                              "price":  2.5
                                          }
                                      ],
-                           "sort":  50
+                           "sort":  40
                        },
                        {
                            "name":  "Soft Drinks",
@@ -493,7 +493,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  60
+                           "sort":  50
                        },
                        {
                            "name":  "Beer",
@@ -524,7 +524,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  70
+                           "sort":  60
                        },
                        {
                            "name":  "Wine",
@@ -644,6 +644,33 @@
                                                               {
                                                                   "name":  "Retail",
                                                                   "price":  23
+                                                              }
+                                                          ]
+                                         }
+                                     ],
+                           "sort":  70
+                       },
+                       {
+                           "name":  "Cocktails",
+                           "items":  [
+                                         {
+                                             "id":  75,
+                                             "name":  "Aperitivo",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "Our curated selection of alcoholic aperitive cocktails",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Aperol Spritz",
+                                                                  "price":  12
+                                                              },
+                                                              {
+                                                                  "name":  "Campari Spritz",
+                                                                  "price":  12
+                                                              },
+                                                              {
+                                                                  "name":  "Negroni",
+                                                                  "price":  12
                                                               }
                                                           ]
                                          }
