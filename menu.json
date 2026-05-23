@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-23T18:26:59.5496752+03:00",
+    "updatedAt":  "2026-05-24T00:30:03.2910481+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -692,19 +692,19 @@
                                              "name":  "Aperitivo",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "Our curated selection of alcoholic aperitive cocktails",
+                                             "description":  "Our curated selection of alcoholic aperitif cocktails",
                                              "portions":  [
                                                               {
                                                                   "name":  "Aperol Spritz",
-                                                                  "price":  12
+                                                                  "price":  14
                                                               },
                                                               {
                                                                   "name":  "Campari Spritz",
-                                                                  "price":  12
+                                                                  "price":  14
                                                               },
                                                               {
                                                                   "name":  "Negroni",
-                                                                  "price":  12
+                                                                  "price":  14
                                                               }
                                                           ]
                                          }
@@ -822,7 +822,12 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  0
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Decaf",
+                                                                  "price":  1.5
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  120
