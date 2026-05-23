@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-23T00:30:03.8375159+03:00",
+    "updatedAt":  "2026-05-23T18:26:59.5496752+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -76,6 +76,23 @@
                                              "image":  "",
                                              "description":  "",
                                              "price":  4
+                                         },
+                                         {
+                                             "id":  76,
+                                             "name":  "Affogato",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "all natural ice cream with Illy expresso shot",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Vanilla",
+                                                                  "price":  6.5
+                                                              },
+                                                              {
+                                                                  "name":  "Pistachio",
+                                                                  "price":  6.5
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  10
@@ -452,6 +469,23 @@
                                              "image":  "",
                                              "description":  "",
                                              "price":  2.5
+                                         },
+                                         {
+                                             "id":  76,
+                                             "name":  "Affogato",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "all natural ice cream with Illy expresso shot",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Vanilla",
+                                                                  "price":  6.5
+                                                              },
+                                                              {
+                                                                  "name":  "Pistachio",
+                                                                  "price":  6.5
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  40
