@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-05-31T00:30:04.7088703+03:00",
+    "updatedAt":  "2026-06-01T00:30:15.2901882+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -86,11 +86,11 @@
                                              "portions":  [
                                                               {
                                                                   "name":  "Vanilla",
-                                                                  "price":  6.5
+                                                                  "price":  6
                                                               },
                                                               {
                                                                   "name":  "Pistachio",
-                                                                  "price":  6.5
+                                                                  "price":  6
                                                               }
                                                           ]
                                          }
