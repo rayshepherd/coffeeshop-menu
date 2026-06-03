@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-06-03T00:30:06.2694184+03:00",
+    "updatedAt":  "2026-06-04T00:30:03.6095994+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -728,6 +728,69 @@
                                          }
                                      ],
                            "sort":  90
+                       },
+                       {
+                           "name":  "Bites \u0026 Bowls",
+                           "items":  [
+                                         {
+                                             "id":  78,
+                                             "name":  "Classic Sub",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "turkey, salami, emmental, iceberg, cherry tomato, picckes with our light may mustard sauce",
+                                             "price":  9
+                                         },
+                                         {
+                                             "id":  79,
+                                             "name":  "Turkey \u0026 Cheese Sandwich",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "turkey, emmental, iceberg, pickles with our light mayo \u0026 mustard sauce",
+                                             "price":  9
+                                         },
+                                         {
+                                             "id":  80,
+                                             "name":  "Halloumi Pesto Sandwich",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "halloumi, iceberg, cucumbers, cherry tomatoes with our pesto sauce",
+                                             "price":  7.5
+                                         },
+                                         {
+                                             "id":  81,
+                                             "name":  "Kale Farm Salad",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "kale, sweet potato, carrots, walnuts, kiwi \u0026 parmsan cheese, topped with your choice of lemon oil or balsamic dressing",
+                                             "price":  10
+                                         },
+                                         {
+                                             "id":  82,
+                                             "name":  "Quinoa Chickpea Salad",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "quinoa, chickpeas, halloumi, cucumbers, cherry tomatoes, topped with your choice of lemon oil or balsamic dressing",
+                                             "price":  10
+                                         },
+                                         {
+                                             "id":  77,
+                                             "name":  "Homemade Quiche",
+                                             "tag":  "",
+                                             "image":  "",
+                                             "description":  "homemade quiche with lots of love \u0026 premium ingredients",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Spinach",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Cheese \u0026 Tomato",
+                                                                  "price":  6
+                                                              }
+                                                          ]
+                                         }
+                                     ],
+                           "sort":  100
                        },
                        {
                            "name":  "Snacks",
