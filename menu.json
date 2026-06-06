@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-06-06T15:34:43.1354467+03:00",
+    "updatedAt":  "2026-06-07T00:30:04.4925524+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -694,6 +694,14 @@
                                                                   "price":  14
                                                               }
                                                           ]
+                                         },
+                                         {
+                                             "id":  84,
+                                             "name":  "Gin Tonic",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  9
                                          }
                                      ],
                            "sort":  80
@@ -737,7 +745,7 @@
                                              "name":  "Classic Sub",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "turkey, salami, emmental, iceberg, cherry tomato, picckes with our light may mustard sauce",
+                                             "description":  "turkey, salami, emmental, iceberg, cherry tomato, pickles with our light mayo \u0026 mustard sauce",
                                              "price":  9
                                          },
                                          {
@@ -745,8 +753,25 @@
                                              "name":  "Turkey \u0026 Cheese Sandwich",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "turkey, emmental, iceberg, pickles with our light mayo \u0026 mustard sauce",
-                                             "price":  9
+                                             "description":  "turkey, emmental, iceberg, pickles with our light mayo \u0026 mustard sauce. your choice of bread:",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Baguette",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Sourdough",
+                                                                  "price":  8
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  83,
+                                             "name":  "Crab Sandwich",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "crab sticks, iceberg, rocket leaves, with our mayo, ketchup \u0026 mustard sauce",
+                                             "price":  8
                                          },
                                          {
                                              "id":  80,
@@ -754,7 +779,7 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "halloumi, iceberg, cucumbers, cherry tomatoes with our pesto sauce",
-                                             "price":  7.5
+                                             "price":  6.5
                                          },
                                          {
                                              "id":  81,
@@ -762,7 +787,7 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "kale, sweet potato, carrots, walnuts, kiwi \u0026 parmsan cheese, topped with your choice of lemon oil or balsamic dressing",
-                                             "price":  10
+                                             "price":  9
                                          },
                                          {
                                              "id":  82,
@@ -770,11 +795,11 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "quinoa, chickpeas, halloumi, cucumbers, cherry tomatoes, topped with your choice of lemon oil or balsamic dressing",
-                                             "price":  10
+                                             "price":  9
                                          },
                                          {
                                              "id":  77,
-                                             "name":  "Homemade Quiche",
+                                             "name":  "Savory Quiche",
                                              "tag":  "",
                                              "image":  "",
                                              "description":  "homemade quiche with lots of love \u0026 premium ingredients. your choice of:",
@@ -784,7 +809,7 @@
                                                                   "price":  6
                                                               },
                                                               {
-                                                                  "name":  "Savory Mushroom \u0026 Olives",
+                                                                  "name":  "Mushroom \u0026 Olives",
                                                                   "price":  6
                                                               }
                                                           ]
