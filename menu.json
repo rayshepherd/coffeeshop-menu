@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-06-06T00:30:03.5232664+03:00",
+    "updatedAt":  "2026-06-06T15:34:43.1354467+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -777,14 +777,14 @@
                                              "name":  "Homemade Quiche",
                                              "tag":  "",
                                              "image":  "",
-                                             "description":  "homemade quiche with lots of love \u0026 premium ingredients",
+                                             "description":  "homemade quiche with lots of love \u0026 premium ingredients. your choice of:",
                                              "portions":  [
                                                               {
                                                                   "name":  "Spinach",
                                                                   "price":  6
                                                               },
                                                               {
-                                                                  "name":  "Cheese \u0026 Tomato",
+                                                                  "name":  "Savory Mushroom \u0026 Olives",
                                                                   "price":  6
                                                               }
                                                           ]
