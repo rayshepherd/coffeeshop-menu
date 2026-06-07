@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-06-07T00:30:04.4925524+03:00",
+    "updatedAt":  "2026-06-07T21:49:25.1936181+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -407,11 +407,20 @@
                                          },
                                          {
                                              "id":  33,
-                                             "name":  "Homemade Cookie",
+                                             "name":  "Healthy Cookie",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  3
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Debs",
+                                                                  "price":  3
+                                                              },
+                                                              {
+                                                                  "name":  "Granola",
+                                                                  "price":  4
+                                                              }
+                                                          ]
                                          },
                                          {
                                              "id":  32,
@@ -441,6 +450,14 @@
                                              "image":  "",
                                              "description":  "",
                                              "price":  5.5
+                                         },
+                                         {
+                                             "id":  31,
+                                             "name":  "Healthy Brownie",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6.5
                                          },
                                          {
                                              "id":  9,
