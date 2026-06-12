@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-06-12T00:30:03.7441760+03:00",
+    "updatedAt":  "2026-06-13T00:30:05.9515040+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -715,6 +715,14 @@
                                          {
                                              "id":  84,
                                              "name":  "Gin Tonic",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  9
+                                         },
+                                         {
+                                             "id":  85,
+                                             "name":  "Vodka Redbull",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
