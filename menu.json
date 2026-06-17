@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-06-17T00:30:03.6716949+03:00",
+    "updatedAt":  "2026-06-18T00:30:04.3737646+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -791,20 +791,12 @@
                                                           ]
                                          },
                                          {
-                                             "id":  83,
-                                             "name":  "Crab Sandwich",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "crab sticks, iceberg, rocket leaves, with our mayo, ketchup \u0026 mustard sauce",
-                                             "price":  8
-                                         },
-                                         {
                                              "id":  80,
                                              "name":  "Halloumi Pesto Sandwich",
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "halloumi, iceberg, cucumbers, cherry tomatoes with our pesto sauce",
-                                             "price":  6.5
+                                             "price":  6
                                          },
                                          {
                                              "id":  81,
@@ -844,8 +836,8 @@
                                              "name":  "Tuna Sandwich",
                                              "tag":  null,
                                              "image":  "",
-                                             "description":  "",
-                                             "price":  9
+                                             "description":  "tuna, ",
+                                             "price":  10
                                          }
                                      ],
                            "sort":  100
