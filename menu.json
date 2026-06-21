@@ -2,8 +2,105 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-06-21T00:30:03.9041226+03:00",
+    "updatedAt":  "2026-06-22T00:30:05.9966026+03:00",
     "categories":  [
+                       {
+                           "name":  "Straights",
+                           "items":  [
+                                         {
+                                             "id":  97,
+                                             "name":  "JW Black Label",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Single",
+                                                                  "price":  13
+                                                              },
+                                                              {
+                                                                  "name":  "Double",
+                                                                  "price":  20
+                                                              },
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  60
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  98,
+                                             "name":  "Jameson",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Single",
+                                                                  "price":  12
+                                                              },
+                                                              {
+                                                                  "name":  "Double",
+                                                                  "price":  18
+                                                              },
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  45
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  99,
+                                             "name":  "Jim Beam White",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Single",
+                                                                  "price":  11
+                                                              },
+                                                              {
+                                                                  "name":  "Double",
+                                                                  "price":  18
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  100,
+                                             "name":  "Captain Morgan",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  10
+                                         },
+                                         {
+                                             "id":  101,
+                                             "name":  "Russian Standard",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  10
+                                         },
+                                         {
+                                             "id":  102,
+                                             "name":  "Jose Cuervo Silver",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  13
+                                         },
+                                         {
+                                             "id":  103,
+                                             "name":  "Gordon\u0027s Gin",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  12
+                                         }
+                                     ],
+                           "sort":  0
+                       },
                        {
                            "name":  "Black Coffee",
                            "items":  [
@@ -419,6 +516,18 @@
                                                               {
                                                                   "name":  "Granola",
                                                                   "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Chocolate",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Tahini Oat",
+                                                                  "price":  4
+                                                              },
+                                                              {
+                                                                  "name":  "Orange Date",
+                                                                  "price":  4
                                                               }
                                                           ]
                                          },
@@ -560,6 +669,14 @@
                                                                   "price":  9
                                                               }
                                                           ]
+                                         },
+                                         {
+                                             "id":  89,
+                                             "name":  "Elmir Draft",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          }
                                      ],
                            "sort":  60
@@ -727,6 +844,119 @@
                                              "image":  "",
                                              "description":  "",
                                              "price":  9
+                                         },
+                                         {
+                                             "id":  93,
+                                             "name":  "Espresso Martini",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  12
+                                         },
+                                         {
+                                             "id":  90,
+                                             "name":  "Gin Sour",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  10
+                                         },
+                                         {
+                                             "id":  91,
+                                             "name":  "Margarita",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  12
+                                         },
+                                         {
+                                             "id":  94,
+                                             "name":  "Martini",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  12
+                                         },
+                                         {
+                                             "id":  95,
+                                             "name":  "Passion Fruit Martini",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  13
+                                         },
+                                         {
+                                             "id":  92,
+                                             "name":  "Spicy Margarita",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  13
+                                         },
+                                         {
+                                             "id":  96,
+                                             "name":  "Vodka",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Original",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Coke",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "7up",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Orange",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Cranberry",
+                                                                  "price":  8
+                                                              },
+                                                              {
+                                                                  "name":  "Pineapple",
+                                                                  "price":  8
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  88,
+                                             "name":  "Whiskey Sour",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  10
+                                         },
+                                         {
+                                             "id":  105,
+                                             "name":  "Band Staff Drink",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  1
+                                         },
+                                         {
+                                             "id":  106,
+                                             "name":  "Red Bull Cocktail",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  13
+                                         },
+                                         {
+                                             "id":  107,
+                                             "name":  "Red Bull Mocktail",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  9
                                          }
                                      ],
                            "sort":  80
@@ -771,7 +1001,7 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "turkey, salami, emmental, iceberg, cherry tomato, pickles with our light mayo \u0026 mustard sauce",
-                                             "price":  9
+                                             "price":  8
                                          },
                                          {
                                              "id":  79,
@@ -782,11 +1012,11 @@
                                              "portions":  [
                                                               {
                                                                   "name":  "Baguette",
-                                                                  "price":  8
+                                                                  "price":  7
                                                               },
                                                               {
                                                                   "name":  "Sourdough",
-                                                                  "price":  8
+                                                                  "price":  7
                                                               }
                                                           ]
                                          },
@@ -837,7 +1067,7 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "tuna, ",
-                                             "price":  10
+                                             "price":  7
                                          }
                                      ],
                            "sort":  100
