@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-07-04T00:30:04.4232570+03:00",
+    "updatedAt":  "2026-07-05T00:30:03.4070446+03:00",
     "categories":  [
                        {
                            "name":  "Straights",
@@ -1156,6 +1156,19 @@
                                                               {
                                                                   "name":  "Decaf",
                                                                   "price":  1.5
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  108,
+                                             "name":  "Whiskey Shot",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Jameson",
+                                                                  "price":  3.5
                                                               }
                                                           ]
                                          }
