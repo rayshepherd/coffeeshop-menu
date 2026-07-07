@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-07-07T00:30:04.6083910+03:00",
+    "updatedAt":  "2026-07-08T00:30:05.6918559+03:00",
     "categories":  [
                        {
                            "name":  "Straights",
@@ -599,6 +599,14 @@
                                              "image":  "",
                                              "description":  "",
                                              "price":  2.5
+                                         },
+                                         {
+                                             "id":  109,
+                                             "name":  "Molasses Tahini Brownie",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  6
                                          }
                                      ],
                            "sort":  40
