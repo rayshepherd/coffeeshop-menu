@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-07-20T00:30:04.6550997+03:00",
+    "updatedAt":  "2026-07-21T00:30:02.4412627+03:00",
     "categories":  [
                        {
                            "name":  "Straights",
@@ -99,7 +99,7 @@
                                              "price":  12
                                          }
                                      ],
-                           "sort":  0
+                           "sort":  10
                        },
                        {
                            "name":  "Black Coffee",
@@ -192,7 +192,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  10
+                           "sort":  20
                        },
                        {
                            "name":  "Latte",
@@ -350,7 +350,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  20
+                           "sort":  30
                        },
                        {
                            "name":  "Tea",
@@ -432,7 +432,7 @@
                                              "price":  5
                                          }
                                      ],
-                           "sort":  30
+                           "sort":  40
                        },
                        {
                            "name":  "Desserts",
@@ -609,7 +609,7 @@
                                              "price":  6
                                          }
                                      ],
-                           "sort":  40
+                           "sort":  50
                        },
                        {
                            "name":  "Soft Drinks",
@@ -648,7 +648,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  50
+                           "sort":  60
                        },
                        {
                            "name":  "Beer",
@@ -677,17 +677,9 @@
                                                                   "price":  9
                                                               }
                                                           ]
-                                         },
-                                         {
-                                             "id":  89,
-                                             "name":  "Elmir Draft",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  6
                                          }
                                      ],
-                           "sort":  60
+                           "sort":  70
                        },
                        {
                            "name":  "Wine",
@@ -811,7 +803,34 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  70
+                           "sort":  80
+                       },
+                       {
+                           "name":  "Cider",
+                           "items":  [
+                                         {
+                                             "id":  110,
+                                             "name":  "Tiny Moon Cider",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Original",
+                                                                  "price":  7
+                                                              },
+                                                              {
+                                                                  "name":  "Dry",
+                                                                  "price":  7
+                                                              },
+                                                              {
+                                                                  "name":  "Berry",
+                                                                  "price":  8
+                                                              }
+                                                          ]
+                                         }
+                                     ],
+                           "sort":  90
                        },
                        {
                            "name":  "Cocktails",
@@ -967,7 +986,7 @@
                                              "price":  9
                                          }
                                      ],
-                           "sort":  80
+                           "sort":  100
                        },
                        {
                            "name":  "Breakfast",
@@ -998,7 +1017,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  90
+                           "sort":  110
                        },
                        {
                            "name":  "Bites \u0026 Bowls",
@@ -1078,7 +1097,7 @@
                                              "price":  7
                                          }
                                      ],
-                           "sort":  100
+                           "sort":  120
                        },
                        {
                            "name":  "Snacks",
@@ -1133,7 +1152,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  110
+                           "sort":  130
                        },
                        {
                            "name":  "Add-Ons",
@@ -1179,9 +1198,26 @@
                                                                   "price":  3.5
                                                               }
                                                           ]
+                                         },
+                                         {
+                                             "id":  111,
+                                             "name":  "Ice Cream Scoop",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Vanilla",
+                                                                  "price":  2
+                                                              },
+                                                              {
+                                                                  "name":  "Pistachio",
+                                                                  "price":  2
+                                                              }
+                                                          ]
                                          }
                                      ],
-                           "sort":  120
+                           "sort":  140
                        }
                    ]
 }
