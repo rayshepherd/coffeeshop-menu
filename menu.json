@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-07-22T00:30:03.7783140+03:00",
+    "updatedAt":  "2026-07-23T00:30:03.3531245+03:00",
     "categories":  [
                        {
                            "name":  "Straights",
@@ -105,6 +105,43 @@
                            "name":  "Black Coffee",
                            "items":  [
                                          {
+                                             "id":  112,
+                                             "name":  "Black Coffee + Croissant Offer",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Single E",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Double E",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Lungo",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Americano",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Iced Americano",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "French Press",
+                                                                  "price":  6
+                                                              },
+                                                              {
+                                                                  "name":  "Lebanese Coffee",
+                                                                  "price":  6
+                                                              }
+                                                          ]
+                                         },
+                                         {
                                              "id":  37,
                                              "name":  "Espresso",
                                              "tag":  null,
@@ -197,6 +234,19 @@
                        {
                            "name":  "Latte",
                            "items":  [
+                                         {
+                                             "id":  113,
+                                             "name":  "Latte + Croissant Offer",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  8
+                                                              }
+                                                          ]
+                                         },
                                          {
                                              "id":  42,
                                              "name":  "Latte",
@@ -430,6 +480,19 @@
                                              "image":  "",
                                              "description":  "",
                                              "price":  5
+                                         },
+                                         {
+                                             "id":  114,
+                                             "name":  "Sparkling Iced Tea",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Iced",
+                                                                  "price":  5
+                                                              }
+                                                          ]
                                          }
                                      ],
                            "sort":  40
