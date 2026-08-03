@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-08-03T00:30:05.1374785+03:00",
+    "updatedAt":  "2026-08-04T00:30:03.8680435+03:00",
     "categories":  [
                        {
                            "name":  "Straights",
@@ -88,7 +88,7 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "",
-                                             "price":  13
+                                             "price":  8
                                          },
                                          {
                                              "id":  103,
