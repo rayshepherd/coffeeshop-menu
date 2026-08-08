@@ -2,105 +2,8 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-08-08T00:30:03.2975840+03:00",
+    "updatedAt":  "2026-08-09T00:30:06.2301017+03:00",
     "categories":  [
-                       {
-                           "name":  "Straights",
-                           "items":  [
-                                         {
-                                             "id":  97,
-                                             "name":  "JW Black Label",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "portions":  [
-                                                              {
-                                                                  "name":  "Single",
-                                                                  "price":  13
-                                                              },
-                                                              {
-                                                                  "name":  "Double",
-                                                                  "price":  20
-                                                              },
-                                                              {
-                                                                  "name":  "Bottle",
-                                                                  "price":  60
-                                                              }
-                                                          ]
-                                         },
-                                         {
-                                             "id":  98,
-                                             "name":  "Jameson",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "portions":  [
-                                                              {
-                                                                  "name":  "Single",
-                                                                  "price":  12
-                                                              },
-                                                              {
-                                                                  "name":  "Double",
-                                                                  "price":  18
-                                                              },
-                                                              {
-                                                                  "name":  "Bottle",
-                                                                  "price":  45
-                                                              }
-                                                          ]
-                                         },
-                                         {
-                                             "id":  99,
-                                             "name":  "Jim Beam White",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "portions":  [
-                                                              {
-                                                                  "name":  "Single",
-                                                                  "price":  11
-                                                              },
-                                                              {
-                                                                  "name":  "Double",
-                                                                  "price":  18
-                                                              }
-                                                          ]
-                                         },
-                                         {
-                                             "id":  100,
-                                             "name":  "Captain Morgan",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  10
-                                         },
-                                         {
-                                             "id":  101,
-                                             "name":  "Russian Standard",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  10
-                                         },
-                                         {
-                                             "id":  102,
-                                             "name":  "Jose Cuervo Silver",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  8
-                                         },
-                                         {
-                                             "id":  103,
-                                             "name":  "Gordon\u0027s Gin",
-                                             "tag":  null,
-                                             "image":  "",
-                                             "description":  "",
-                                             "price":  12
-                                         }
-                                     ],
-                           "sort":  10
-                       },
                        {
                            "name":  "Black Coffee",
                            "items":  [
@@ -229,7 +132,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  20
+                           "sort":  10
                        },
                        {
                            "name":  "Latte",
@@ -400,7 +303,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  30
+                           "sort":  20
                        },
                        {
                            "name":  "Tea",
@@ -495,7 +398,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  40
+                           "sort":  30
                        },
                        {
                            "name":  "Desserts",
@@ -672,7 +575,7 @@
                                              "price":  6
                                          }
                                      ],
-                           "sort":  50
+                           "sort":  40
                        },
                        {
                            "name":  "Soft Drinks",
@@ -711,7 +614,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  60
+                           "sort":  50
                        },
                        {
                            "name":  "Beer",
@@ -742,7 +645,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  70
+                           "sort":  60
                        },
                        {
                            "name":  "Wine",
@@ -866,7 +769,7 @@
                                                           ]
                                          }
                                      ],
-                           "sort":  80
+                           "sort":  70
                        },
                        {
                            "name":  "Cider",
@@ -891,6 +794,103 @@
                                                                   "price":  8
                                                               }
                                                           ]
+                                         }
+                                     ],
+                           "sort":  80
+                       },
+                       {
+                           "name":  "Straights",
+                           "items":  [
+                                         {
+                                             "id":  97,
+                                             "name":  "JW Black Label",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Single",
+                                                                  "price":  13
+                                                              },
+                                                              {
+                                                                  "name":  "Double",
+                                                                  "price":  20
+                                                              },
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  60
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  98,
+                                             "name":  "Jameson",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Single",
+                                                                  "price":  12
+                                                              },
+                                                              {
+                                                                  "name":  "Double",
+                                                                  "price":  18
+                                                              },
+                                                              {
+                                                                  "name":  "Bottle",
+                                                                  "price":  45
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  99,
+                                             "name":  "Jim Beam White",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "portions":  [
+                                                              {
+                                                                  "name":  "Single",
+                                                                  "price":  11
+                                                              },
+                                                              {
+                                                                  "name":  "Double",
+                                                                  "price":  18
+                                                              }
+                                                          ]
+                                         },
+                                         {
+                                             "id":  100,
+                                             "name":  "Captain Morgan",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  10
+                                         },
+                                         {
+                                             "id":  101,
+                                             "name":  "Russian Standard",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  10
+                                         },
+                                         {
+                                             "id":  102,
+                                             "name":  "Jose Cuervo Silver",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  8
+                                         },
+                                         {
+                                             "id":  103,
+                                             "name":  "Gordon\u0027s Gin",
+                                             "tag":  null,
+                                             "image":  "",
+                                             "description":  "",
+                                             "price":  12
                                          }
                                      ],
                            "sort":  90
@@ -1102,11 +1102,11 @@
                                              "portions":  [
                                                               {
                                                                   "name":  "Baguette",
-                                                                  "price":  7
+                                                                  "price":  8
                                                               },
                                                               {
                                                                   "name":  "Sourdough",
-                                                                  "price":  7
+                                                                  "price":  8
                                                               }
                                                           ]
                                          },
@@ -1116,7 +1116,7 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "halloumi, iceberg, cucumbers, cherry tomatoes with our pesto sauce",
-                                             "price":  6
+                                             "price":  7
                                          },
                                          {
                                              "id":  81,
