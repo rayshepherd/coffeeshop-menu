@@ -2,7 +2,7 @@
     "restaurant":  "DJ LAB Cafe",
     "currency":  "$",
     "taxRate":  0,
-    "updatedAt":  "2026-08-30T00:30:03.9017394+03:00",
+    "updatedAt":  "2026-08-31T00:30:06.0840658+03:00",
     "categories":  [
                        {
                            "name":  "Black Coffee",
@@ -1094,11 +1094,11 @@
                                              "portions":  [
                                                               {
                                                                   "name":  "Baguette",
-                                                                  "price":  8
+                                                                  "price":  9
                                                               },
                                                               {
                                                                   "name":  "Sourdough",
-                                                                  "price":  8
+                                                                  "price":  9
                                                               }
                                                           ]
                                          },
@@ -1108,7 +1108,7 @@
                                              "tag":  null,
                                              "image":  "",
                                              "description":  "halloumi, iceberg, cucumbers, cherry tomatoes with our pesto sauce",
-                                             "price":  7
+                                             "price":  8
                                          },
                                          {
                                              "id":  81,
